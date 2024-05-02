@@ -1,0 +1,299 @@
+$fondo: azul;
+
+.fondo_azul{
+    @if $fondo == azul{
+        background-color: #191919;
+        display: grid;
+        place-content: center;
+        background: radial-gradient(circle, rgb(48, 187, 192), rgb(30, 27, 207));
+    }
+}
+
+.nav{
+
+    align-items: center;
+
+    display: flex;
+
+    justify-content: center;
+
+    background-color: chocolate;
+
+    width: 483px;
+
+}
+
+.nav-list{
+
+    align-self: flex-start;
+
+    list-style: none;
+
+    display: flex;
+
+    justify-content: center;
+
+    width: 100%;
+}
+
+.nav-link{
+
+    text-decoration: none;
+
+    color: #000;
+
+    font-size: 24px;
+
+    padding: 15px;
+
+    font-weight: bold;
+
+    text-align: center
+
+}
+
+.container{
+    min-height: 100vh;
+    max-height: 100%;
+    display: grid;
+    place-content: center center;
+    place-items: center;
+}
+
+.container h1{
+
+    @include flex(center, center, none, none);
+
+    display: flex;
+
+}
+
+
+
+h1{
+    color: transparent;
+    background: linear-gradient(45deg, rgb(194, 12, 43), rgb(201, 124, 201));
+    background-clip: text;
+    transition: 2s;
+    
+}
+
+
+
+.btn-container{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    
+a{
+    text-decoration: none;
+    font-size: 1.7rem;
+ }
+
+.zombi_pequeño{
+
+    height: 70px;
+    width: 62px;
+    animation-name: mini_cabeza;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-out;
+    animation-duration: 8s;
+
+}
+
+}
+
+    @keyframes mini_cabeza{
+
+
+        100%{
+            transform: rotate(360deg);
+        }
+
+    }
+    
+ 
+
+
+@each $key, $valor in $colores{
+    .btn-#{$key}{
+        background-color: $valor;
+        padding: 10px;
+        border-radius: 10px;
+        transition: 0.4s;
+
+        @if $key == light{
+            color: #000;
+            border: 4px solid darken($valor,20%);
+
+            &:hover{
+                background-color: darken($valor,20%);
+            }
+
+            
+        } @else{
+            color: #fff;
+            border: 4px solid darken($valor,20%);
+
+            &:hover{
+                background-color: lighten($valor,20%);
+            }
+        }
+    }
+}
+
+.cabeza_zombi{
+    animation-name: cabeza_animacion;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-out;
+    animation-duration: 8s;
+}
+
+
+    @keyframes cabeza_animacion {
+
+        0% {
+        
+                transform: rotate(720deg) ;
+              
+        }
+
+        12% {
+            
+                transform: translate(100px, 0px);
+              
+        }
+
+        25% {
+            
+            transform: rotate(720deg);
+          
+    }
+
+        37% {
+            
+            transform: translate(0px, 0px);
+          
+        }
+
+        49% {
+            
+            transform: rotate(720deg);
+          
+        }
+        
+        61% {
+            
+            transform: translate(-100px, 0px);
+          
+        } 
+
+        73% {
+            
+            transform: rotate(720deg);
+          
+        }
+
+        83% {
+            
+            transform: translate(0px, 0px);
+          
+        }
+
+        100% {
+            
+            transform: rotate(720deg);
+          
+        }
+        
+    }
+
+    .footer{
+        background: radial-gradient(circle, rgb(48, 192, 55), rgb(27, 207, 162));
+        width: 1900px;
+        height: 200px;
+        text-align: center;
+        @include flex(center, center, none, none)
+    }
+
+    @media (max-width: 500px){
+
+        .footer{
+
+            width: 1400px;
+            height: 100px;
+        }
+
+        .footer{
+            width: 483px;
+            height: 100px;
+        }
+
+
+        @keyframes cabeza_animacion {
+
+            0% {
+            
+                    transform: rotate(720deg) scale(0.8);
+                  
+            }
+    
+            12% {
+                
+                    transform: translate(100px, 0px) scale(0.8);
+                  
+            }
+    
+            25% {
+                
+                transform: rotate(720deg) scale(0.8);
+              
+        }
+    
+            37% {
+                
+                transform: translate(0px, 0px) scale(0.8);
+              
+            }
+    
+            49% {
+                
+                transform: rotate(720deg) scale(0.8);
+              
+            }
+            
+            61% {
+                
+                transform: translate(-100px, 0px) scale(0.8);
+              
+            } 
+    
+            73% {
+                
+                transform: rotate(720deg) scale(0.8);
+              
+            }
+    
+            83% {
+                
+                transform: translate(0px, 0px) scale(0.8);
+              
+            }
+    
+            100% {
+                
+                transform: rotate(720deg) scale(0.8);
+              
+            }
+            
+        }
+
+
+    }
+
+
+    
+    
+
+
+

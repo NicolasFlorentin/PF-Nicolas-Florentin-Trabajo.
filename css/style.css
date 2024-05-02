@@ -1,0 +1,1097 @@
+@charset "UTF-8";
+.p-1 {
+  padding: 10px;
+}
+
+.f-1 {
+  font-size: 25px;
+}
+
+.p-2 {
+  padding: 20px;
+}
+
+.f-2 {
+  font-size: 50px;
+}
+
+.p-3 {
+  padding: 30px;
+}
+
+.f-3 {
+  font-size: 75px;
+}
+
+.p-4 {
+  padding: 40px;
+}
+
+.f-4 {
+  font-size: 100px;
+}
+
+.p-5 {
+  padding: 50px;
+}
+
+.f-5 {
+  font-size: 125px;
+}
+
+.flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.fondo_azul {
+  background-color: #191919;
+  display: grid;
+  place-content: center;
+  background: radial-gradient(circle, rgb(48, 187, 192), rgb(30, 27, 207));
+}
+
+.nav {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  background-color: chocolate;
+  width: 483px;
+}
+
+.nav-list {
+  align-self: flex-start;
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: #000;
+  font-size: 24px;
+  padding: 15px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.container {
+  min-height: 100vh;
+  max-height: 100%;
+  display: grid;
+  place-content: center center;
+  place-items: center;
+}
+
+.container h1 {
+  display: flex;
+  flex-direction: none;
+  justify-content: center;
+  align-items: center;
+  flex-direction: none;
+  gap: none;
+  display: flex;
+}
+
+h1 {
+  color: transparent;
+  background: linear-gradient(45deg, rgb(194, 12, 43), rgb(201, 124, 201));
+  background-clip: text;
+  transition: 2s;
+}
+
+.btn-container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.btn-container a {
+  text-decoration: none;
+  font-size: 1.7rem;
+}
+.btn-container .zombi_pequeño {
+  height: 70px;
+  width: 62px;
+  animation-name: mini_cabeza;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-out;
+  animation-duration: 8s;
+}
+
+@keyframes mini_cabeza {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.btn-primary {
+  background-color: blue;
+  padding: 10px;
+  border-radius: 10px;
+  transition: 0.4s;
+  color: #fff;
+  border: 4px solid #000099;
+}
+.btn-primary:hover {
+  background-color: #6666ff;
+}
+
+.btn-danger {
+  background-color: red;
+  padding: 10px;
+  border-radius: 10px;
+  transition: 0.4s;
+  color: #fff;
+  border: 4px solid #990000;
+}
+.btn-danger:hover {
+  background-color: #ff6666;
+}
+
+.btn-warning {
+  background-color: orange;
+  padding: 10px;
+  border-radius: 10px;
+  transition: 0.4s;
+  color: #fff;
+  border: 4px solid #996300;
+}
+.btn-warning:hover {
+  background-color: #ffc966;
+}
+
+.btn-dark {
+  background-color: black;
+  padding: 10px;
+  border-radius: 10px;
+  transition: 0.4s;
+  color: #fff;
+  border: 4px solid black;
+}
+.btn-dark:hover {
+  background-color: #333333;
+}
+
+.btn-light {
+  background-color: white;
+  padding: 10px;
+  border-radius: 10px;
+  transition: 0.4s;
+  color: #000;
+  border: 4px solid #cccccc;
+}
+.btn-light:hover {
+  background-color: #cccccc;
+}
+
+.btn-success {
+  background-color: green;
+  padding: 10px;
+  border-radius: 10px;
+  transition: 0.4s;
+  color: #fff;
+  border: 4px solid #001a00;
+}
+.btn-success:hover {
+  background-color: #00e600;
+}
+
+.btn-info {
+  background-color: gray;
+  padding: 10px;
+  border-radius: 10px;
+  transition: 0.4s;
+  color: #fff;
+  border: 4px solid #4d4d4d;
+}
+.btn-info:hover {
+  background-color: #b3b3b3;
+}
+
+.btn-secondary {
+  background-color: pink;
+  padding: 10px;
+  border-radius: 10px;
+  transition: 0.4s;
+  color: #fff;
+  border: 4px solid #ff5a77;
+}
+.btn-secondary:hover {
+  background-color: white;
+}
+
+.btn-terciary {
+  background-color: violet;
+  padding: 10px;
+  border-radius: 10px;
+  transition: 0.4s;
+  color: #fff;
+  border: 4px solid #e228e2;
+}
+.btn-terciary:hover {
+  background-color: #fadcfa;
+}
+
+.cabeza_zombi {
+  animation-name: cabeza_animacion;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-out;
+  animation-duration: 8s;
+}
+
+@keyframes cabeza_animacion {
+  0% {
+    transform: rotate(720deg);
+  }
+  12% {
+    transform: translate(100px, 0px);
+  }
+  25% {
+    transform: rotate(720deg);
+  }
+  37% {
+    transform: translate(0px, 0px);
+  }
+  49% {
+    transform: rotate(720deg);
+  }
+  61% {
+    transform: translate(-100px, 0px);
+  }
+  73% {
+    transform: rotate(720deg);
+  }
+  83% {
+    transform: translate(0px, 0px);
+  }
+  100% {
+    transform: rotate(720deg);
+  }
+}
+.footer {
+  background: radial-gradient(circle, rgb(48, 192, 55), rgb(27, 207, 162));
+  width: 1900px;
+  height: 200px;
+  text-align: center;
+  display: flex;
+  flex-direction: none;
+  justify-content: center;
+  align-items: center;
+  flex-direction: none;
+  gap: none;
+}
+
+@media (max-width: 500px) {
+  .footer {
+    width: 1400px;
+    height: 100px;
+  }
+  .footer {
+    width: 483px;
+    height: 100px;
+  }
+  @keyframes cabeza_animacion {
+    0% {
+      transform: rotate(720deg) scale(0.8);
+    }
+    12% {
+      transform: translate(100px, 0px) scale(0.8);
+    }
+    25% {
+      transform: rotate(720deg) scale(0.8);
+    }
+    37% {
+      transform: translate(0px, 0px) scale(0.8);
+    }
+    49% {
+      transform: rotate(720deg) scale(0.8);
+    }
+    61% {
+      transform: translate(-100px, 0px) scale(0.8);
+    }
+    73% {
+      transform: rotate(720deg) scale(0.8);
+    }
+    83% {
+      transform: translate(0px, 0px) scale(0.8);
+    }
+    100% {
+      transform: rotate(720deg) scale(0.8);
+    }
+  }
+}
+.fondo_verde {
+  background-color: #191919;
+  display: grid;
+  place-content: center;
+  background: radial-gradient(circle, rgb(27, 207, 108), rgb(94, 192, 48));
+}
+
+main {
+  height: 1100px;
+}
+
+.nav {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  background-color: chocolate;
+  width: 1890px;
+}
+
+.nav-list {
+  align-self: flex-start;
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: #000;
+  font-size: 24px;
+  padding: 15px;
+  font-weight: bold;
+}
+
+.titulo_plants {
+  display: flex;
+  flex-direction: none;
+  justify-content: center;
+  align-items: center;
+  flex-direction: none;
+  gap: none;
+  color: transparent;
+  background: linear-gradient(45deg, rgb(211, 158, 13), rgb(214, 37, 10));
+  background-clip: text;
+  transition: 2s;
+}
+
+.plantas_fuertes {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  gap: none;
+}
+
+.el_roble {
+  border-radius: 35px;
+}
+
+.parrafo_roble {
+  color: transparent;
+  background: linear-gradient(45deg, rgb(194, 64, 12), rgba(121, 83, 12, 0.726));
+  background-clip: text;
+}
+.parrafo_roble:hover {
+  background: linear-gradient(95deg, rgba(121, 83, 12, 0.726), rgb(194, 64, 12));
+  background-clip: text;
+}
+
+.cabeza_del_tronco {
+  animation-name: cabeza_del_tronco_animacion;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-out;
+  animation-duration: 8s;
+  object-fit: cover;
+  height: 100px;
+  width: 100px;
+}
+
+@keyframes cabeza_del_tronco_animacion {
+  0% {
+    transform: translate(0px, 0px);
+  }
+  25% {
+    transform: translate(400px, 0px);
+  }
+  50% {
+    transform: translate(0px, 0px);
+  }
+  75% {
+    transform: translate(400px, 0px);
+  }
+  100% {
+    transform: translate(0px, 0px);
+  }
+}
+.footer_roble {
+  background: radial-gradient(circle, rgb(9, 160, 9), rgb(19, 168, 131));
+  width: 100%;
+  height: 80px;
+  text-align: center;
+  display: flex;
+  flex-direction: none;
+  justify-content: center;
+  align-items: center;
+  flex-direction: none;
+  gap: none;
+}
+
+@media (max-width: 500px) {
+  img .fondo_verde {
+    background-color: #191919;
+    display: grid;
+    place-content: center;
+    background: radial-gradient(circle, rgb(27, 207, 108), rgb(94, 192, 48));
+  }
+  .nav {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    background-color: chocolate;
+    width: 483px;
+  }
+  .nav-list {
+    align-self: flex-start;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+  .nav-link {
+    text-decoration: none;
+    color: #000;
+    font-size: 24px;
+    padding: 15px;
+    font-weight: bold;
+    text-align: center;
+  }
+  .titulo_plants {
+    display: flex;
+    flex-direction: none;
+    justify-content: center;
+    align-items: center;
+    flex-direction: none;
+    gap: none;
+    color: transparent;
+    background: linear-gradient(45deg, rgb(211, 158, 13), rgb(214, 37, 10));
+    background-clip: text;
+    transition: 2s;
+    font-size: 45px;
+  }
+  .plantas_fuertes {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: none;
+  }
+  .el_roble {
+    border-radius: 35px;
+    height: 400px;
+    width: 400px;
+  }
+  .parrafo_roble {
+    color: transparent;
+    background: linear-gradient(45deg, rgb(194, 64, 12), rgba(121, 83, 12, 0.726));
+    background-clip: text;
+    width: 60%;
+    font-size: 35px;
+  }
+  .parrafo_roble:hover {
+    background: linear-gradient(95deg, rgba(121, 83, 12, 0.726), rgb(194, 64, 12));
+    background-clip: text;
+  }
+  .cabeza_del_tronco {
+    animation-name: cabeza_del_tronco_animacion;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-out;
+    animation-duration: 8s;
+    object-fit: cover;
+    height: 20%;
+    width: 20%;
+  }
+  @keyframes cabeza_del_tronco_animacion {
+    0% {
+      transform: translate(0px, 0px) scale(0.6);
+    }
+    25% {
+      transform: translate(325px, 0px) scale(0.6);
+    }
+    50% {
+      transform: translate(0px, 0px) scale(0.6);
+    }
+    75% {
+      transform: translate(325px, 0px) scale(0.6);
+    }
+    100% {
+      transform: translate(0px, 0px) scale(0.6);
+    }
+  }
+  .menu_roble {
+    height: 1100px;
+  }
+}
+.fondo_marron {
+  background-color: #191919;
+  display: grid;
+  place-content: center;
+  background: radial-gradient(circle, rgb(156, 82, 13), rgb(212, 166, 37));
+}
+
+main {
+  height: 1100px;
+}
+
+.nav_boss {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  background-color: rgb(192, 210, 30);
+  width: 1890px;
+}
+
+.nav-list {
+  align-self: flex-start;
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: #000;
+  font-size: 24px;
+  padding: 15px;
+  font-weight: bold;
+}
+
+.titulo_de_los_jefes {
+  display: flex;
+  flex-direction: none;
+  justify-content: center;
+  align-items: center;
+  flex-direction: none;
+  gap: none;
+  color: transparent;
+  background: linear-gradient(45deg, rgb(212, 230, 55), rgb(94, 143, 4));
+  background-clip: text;
+}
+
+.info_jefes {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: none;
+}
+
+.all_bosses {
+  width: 800px;
+  height: 470px;
+  border-radius: 30px;
+  transition: 1s;
+}
+.all_bosses:hover {
+  width: 870px;
+  height: 550px;
+}
+
+.contenedor_de_imagenes {
+  display: flex;
+  flex-direction: row;
+}
+
+.imagen_pequeña {
+  animation-name: imagen_cabezas_animacion;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-out;
+  position: relative;
+  animation-duration: 3s;
+  width: 200px;
+  height: 200px;
+}
+
+@keyframes imagen_cabezas_animacion {
+  0% {
+    left: 0px;
+    top: 0px;
+  }
+  50% {
+    left: 0px;
+    top: 300px;
+  }
+  100% {
+    left: 0px;
+    top: 0px;
+  }
+}
+.parrafo_boss {
+  color: transparent;
+  background: linear-gradient(45deg, rgb(20, 116, 8), rgba(121, 12, 107, 0.726));
+  background-clip: text;
+}
+.parrafo_boss:hover {
+  background: linear-gradient(95deg, rgba(121, 12, 107, 0.726), rgb(20, 116, 8));
+  background-clip: text;
+}
+
+.footer_boss {
+  background: radial-gradient(circle, rgb(9, 160, 9), rgb(19, 168, 131));
+  width: 100%;
+  height: 80px;
+  text-align: center;
+  display: flex;
+  flex-direction: none;
+  justify-content: center;
+  align-items: center;
+  flex-direction: none;
+  gap: none;
+}
+
+@media (max-width: 500px) {
+  .fondo_marron {
+    background-color: #191919;
+    display: grid;
+    place-content: center;
+    background: radial-gradient(circle, rgb(156, 82, 13), rgb(212, 166, 37));
+  }
+  main {
+    height: 1100px;
+  }
+  .nav_boss {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    background-color: rgb(192, 210, 30);
+    width: 483px;
+  }
+  .nav-list {
+    align-self: center;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+  .nav-link {
+    text-decoration: none;
+    color: #000;
+    font-size: 24px;
+    padding: 15px;
+    font-weight: bold;
+    text-align: center;
+  }
+  .titulo_de_los_jefes {
+    display: flex;
+    flex-direction: none;
+    justify-content: center;
+    align-items: center;
+    flex-direction: none;
+    gap: none;
+    color: transparent;
+    background: linear-gradient(45deg, rgb(212, 230, 55), rgb(94, 143, 4));
+    background-clip: text;
+    font-size: 90px;
+  }
+  .info_jefes {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: none;
+  }
+  .all_bosses {
+    width: 253px;
+    height: 312px;
+    border-radius: 30px;
+    transition: 1s;
+  }
+  .all_bosses:hover {
+    width: 253px;
+    height: 312px;
+  }
+  .contenedor_de_imagenes {
+    display: flex;
+    flex-direction: row;
+  }
+  .imagen_pequeña {
+    animation-name: imagen_cabezas_animacion;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-out;
+    position: relative;
+    animation-duration: 3s;
+    width: 115px;
+    height: 200px;
+  }
+  @keyframes imagen_cabezas_animacion {
+    0% {
+      left: 0px;
+      top: 0px;
+      transform: scale(0.4);
+    }
+    50% {
+      left: 0px;
+      top: 300px;
+      transform: scale(0.4);
+    }
+    100% {
+      left: 0px;
+      top: 0px;
+      transform: scale(0.4);
+    }
+  }
+  .parrafo_boss {
+    color: transparent;
+    background: linear-gradient(45deg, rgb(20, 116, 8), rgba(121, 12, 107, 0.726));
+    background-clip: text;
+    font-size: 20px;
+    width: 370px;
+    height: 300px;
+    text-align: center;
+  }
+  .parrafo_boss:hover {
+    background: linear-gradient(95deg, rgba(121, 12, 107, 0.726), rgb(20, 116, 8));
+    background-clip: text;
+  }
+  .footer_boss {
+    background: radial-gradient(circle, rgb(9, 160, 9), rgb(19, 168, 131));
+    width: 100%;
+    height: 80px;
+    display: flex;
+    flex-direction: none;
+    justify-content: center;
+    align-items: center;
+    flex-direction: none;
+    gap: none;
+  }
+  main {
+    height: 800px;
+  }
+}
+.fondo_gris {
+  background-color: #191919;
+  display: grid;
+  place-content: center;
+  background: radial-gradient(circle, rgb(24, 1, 1), rgb(19, 19, 27));
+}
+
+.nav_super {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  background-color: rgb(73, 69, 87);
+  width: 1890px;
+}
+
+.nav-list {
+  align-self: flex-start;
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: #000;
+  font-size: 24px;
+  padding: 15px;
+  font-weight: bold;
+}
+
+.random_bosses {
+  display: flex;
+  flex-direction: none;
+  justify-content: center;
+  align-items: center;
+  flex-direction: none;
+  gap: none;
+  color: transparent;
+  background: linear-gradient(45deg, rgb(255, 255, 255), rgb(43, 44, 41));
+  background-clip: text;
+}
+
+.boss_box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: none;
+  display: flex;
+}
+
+.super_frijol {
+  width: 215px;
+  height: 215px;
+  transition: 1s;
+}
+.super_frijol:hover {
+  width: 250px;
+  height: 250px;
+}
+
+.frijol_laser {
+  display: flex;
+  flex-direction: none;
+  justify-content: center;
+  align-items: center;
+  flex-direction: none;
+  gap: none;
+  color: transparent;
+  background: linear-gradient(45deg, rgb(95, 209, 28), rgba(2, 54, 2, 0.726));
+  background-clip: text;
+  width: 40%;
+  height: 55px;
+  text-align: center;
+}
+
+.super_parrafo {
+  display: flex;
+  flex-direction: none;
+  justify-content: center;
+  align-items: center;
+  flex-direction: none;
+  gap: none;
+  color: transparent;
+  background: linear-gradient(45deg, rgb(9, 250, 1), rgba(2, 255, 255, 0.726));
+  background-clip: text;
+  width: 40%;
+  height: 530px;
+  text-align: center;
+}
+
+.zombi_titulo {
+  display: flex;
+  flex-direction: none;
+  justify-content: center;
+  align-items: center;
+  flex-direction: none;
+  gap: none;
+  color: transparent;
+  background: linear-gradient(45deg, rgb(209, 40, 28), rgba(0, 0, 0, 0.726));
+  background-clip: text;
+  width: 40%;
+  height: 55px;
+  text-align: center;
+}
+
+.super_parrafo_zombi {
+  display: flex;
+  flex-direction: none;
+  justify-content: center;
+  align-items: center;
+  flex-direction: none;
+  gap: none;
+  color: transparent;
+  background: linear-gradient(45deg, rgb(250, 1, 1), rgba(236, 114, 14, 0.726));
+  background-clip: text;
+  width: 40%;
+  height: 530px;
+  text-align: center;
+}
+
+.footer_power {
+  background: radial-gradient(circle, rgb(228, 9, 9), rgb(228, 9, 9));
+  width: 100%;
+  height: 80px;
+  text-align: center;
+  display: flex;
+  flex-direction: none;
+  justify-content: center;
+  align-items: center;
+  flex-direction: none;
+  gap: none;
+}
+
+.super_menu {
+  height: 3300px;
+}
+
+@media (max-width: 500px) {
+  .fondo_gris {
+    background-color: #191919;
+    display: grid;
+    place-content: center;
+    background: radial-gradient(circle, rgb(24, 1, 1), rgb(19, 19, 27));
+  }
+  .nav_super {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(73, 69, 87);
+    width: 483px;
+  }
+  .nav-list {
+    align-self: flex-start;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+  .nav-link {
+    text-decoration: none;
+    color: #000;
+    font-size: 24px;
+    padding: 15px;
+    font-weight: bold;
+  }
+  .random_bosses {
+    display: flex;
+    flex-direction: none;
+    justify-content: center;
+    align-items: center;
+    flex-direction: none;
+    gap: none;
+    color: transparent;
+    background: linear-gradient(45deg, rgb(255, 255, 255), rgb(43, 44, 41));
+    background-clip: text;
+    font-size: 50px;
+  }
+  .boss_box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: none;
+    display: flex;
+  }
+  .super_frijol {
+    width: 125px;
+    height: 125px;
+    transition: 1s;
+  }
+  .super_frijol:hover {
+    width: 250px;
+    height: 250px;
+  }
+  .frijol_laser {
+    display: flex;
+    flex-direction: none;
+    justify-content: center;
+    align-items: center;
+    flex-direction: none;
+    gap: none;
+    color: transparent;
+    background: linear-gradient(45deg, rgb(95, 209, 28), rgba(2, 54, 2, 0.726));
+    background-clip: text;
+    width: 60%;
+    height: 155px;
+    text-align: center;
+  }
+  .super_parrafo {
+    display: flex;
+    flex-direction: none;
+    justify-content: center;
+    align-items: center;
+    flex-direction: none;
+    gap: none;
+    color: transparent;
+    background: linear-gradient(45deg, rgb(9, 250, 1), rgba(2, 255, 255, 0.726));
+    background-clip: text;
+    width: 40%;
+    height: 400px;
+    font-size: 30px;
+    text-align: center;
+  }
+  .zombi_titulo {
+    display: flex;
+    flex-direction: none;
+    justify-content: center;
+    align-items: center;
+    flex-direction: none;
+    gap: none;
+    color: transparent;
+    background: linear-gradient(45deg, rgb(209, 40, 28), rgba(0, 0, 0, 0.726));
+    background-clip: text;
+    width: 60%;
+    height: 155px;
+    font-size: 50px;
+    text-align: center;
+  }
+  .super_parrafo_zombi {
+    display: flex;
+    flex-direction: none;
+    justify-content: center;
+    align-items: center;
+    flex-direction: none;
+    gap: none;
+    color: transparent;
+    background: linear-gradient(45deg, rgb(250, 1, 1), rgba(236, 114, 14, 0.726));
+    background-clip: text;
+    width: 40%;
+    height: 400px;
+    font-size: 30px;
+    text-align: center;
+  }
+  .super_menu {
+    height: 2675px;
+  }
+}
+.fondo_azul {
+  background-color: #191919;
+  display: grid;
+  place-content: center;
+  background: radial-gradient(circle, rgb(48, 187, 192), rgb(30, 27, 207));
+}
+
+.nav_boss {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  background-color: rgb(192, 210, 30);
+  width: 1890px;
+}
+
+.nav-list {
+  align-self: flex-start;
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: #000;
+  font-size: 24px;
+  padding: 15px;
+  font-weight: bold;
+}
+
+.peluches {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: none;
+  padding: 40px;
+}
+
+.venta {
+  border-radius: 35px;
+}
+
+.comprar {
+  display: flex;
+  flex-direction: none;
+  justify-content: center;
+  align-items: center;
+  flex-direction: none;
+  gap: none;
+  background-color: aqua;
+  border-radius: 10px;
+  width: 213px;
+  text-decoration: none;
+}
+.comprar:hover {
+  background: linear-gradient(95deg, rgba(121, 83, 12, 0.726), rgb(194, 64, 12));
+  background-clip: text;
+}
+
+.tienda {
+  height: 1800px;
+}
+
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,21 @@
+.flex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin contenedor-flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+@mixin flex($justify, $align, $direction, $gap) {
+    display: flex;
+    flex-direction: $direction;
+    justify-content: $justify;
+    align-items: $align;
+    flex-direction: $direction;
+    gap: $gap;
+}

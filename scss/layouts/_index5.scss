@@ -1,0 +1,79 @@
+$fondo: azul;
+
+.fondo_azul{
+    @if $fondo == azul{
+        background-color: #191919;
+        display: grid;
+        place-content: center;
+        background: radial-gradient(circle, rgb(48, 187, 192), rgb(30, 27, 207));
+    }
+}
+
+.nav_boss{
+
+    align-items: center;
+
+    display: flex;
+
+    justify-content: space-between;
+
+    background-color: rgb(192, 210, 30);
+
+    width: 1890px;
+
+}
+
+.nav-list{
+
+    align-self: flex-start;
+
+    list-style: none;
+
+    display: flex;
+
+    justify-content: center;
+
+    width: 100%;
+}
+
+.nav-link{
+
+    text-decoration: none;
+
+    color: #000;
+
+    font-size: 24px;
+
+    padding: 15px;
+
+    font-weight: bold;
+
+}
+
+.peluches{
+
+    @include flex(center, center, column, none);
+    padding: 40px;
+}
+
+.venta{
+
+    border-radius: 35px;
+}
+
+.comprar{
+    @include flex(center, center, none, none);
+    background-color: aqua;
+    border-radius: 10px;
+    width: 213px;
+    text-decoration: none;
+
+    &:hover{
+        background: linear-gradient(95deg, rgba(121, 83, 12, 0.726), rgb(194, 64, 12) );
+        background-clip: text;
+    }
+}
+
+.tienda{
+    height: 1800px;
+}

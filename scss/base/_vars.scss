@@ -1,0 +1,25 @@
+$colores: (
+    primary:blue,
+    danger:red,
+    warning:orange,
+    dark:black,
+    light:white,
+    success:green,
+    info:gray,
+    secondary:pink,
+    terciary:violet,
+);
+
+
+@for $var from 1 through 5{
+
+    .p-#{$var} {
+
+        padding: $var * 10px;
+    }
+
+    .f-#{$var} {
+
+        font-size: $var * 25px;
+    }
+}
