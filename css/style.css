@@ -52,15 +52,15 @@
   background: radial-gradient(circle, rgb(48, 187, 192), rgb(30, 27, 207));
 }
 
-.nav {
+.nav-index_1 {
   align-items: center;
   display: flex;
   justify-content: center;
   background-color: chocolate;
-  width: 483px;
+  width: 100%;
 }
 
-.nav-list {
+.nav-list-index_1 {
   align-self: flex-start;
   list-style: none;
   display: flex;
@@ -68,7 +68,7 @@
   width: 100%;
 }
 
-.nav-link {
+.nav-link-index_1 {
   text-decoration: none;
   color: #000;
   font-size: 24px;
@@ -284,12 +284,30 @@ h1 {
 
 @media (max-width: 500px) {
   .footer {
-    width: 1400px;
+    width: 473px;
     height: 100px;
   }
-  .footer {
-    width: 483px;
-    height: 100px;
+  .nav-index_1 {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    background-color: chocolate;
+    width: 474px;
+  }
+  .nav-list-index_1 {
+    align-self: flex-start;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+  .nav-link-index_1 {
+    text-decoration: none;
+    color: #000;
+    font-size: 24px;
+    padding: 15px;
+    font-weight: bold;
+    text-align: center;
   }
   @keyframes cabeza_animacion {
     0% {
@@ -332,7 +350,7 @@ main {
   height: 1100px;
 }
 
-.nav {
+.nav-index_2 {
   align-items: center;
   display: flex;
   justify-content: space-between;
@@ -340,7 +358,7 @@ main {
   width: 1890px;
 }
 
-.nav-list {
+.nav-list-index_2 {
   align-self: flex-start;
   list-style: none;
   display: flex;
@@ -348,7 +366,7 @@ main {
   width: 100%;
 }
 
-.nav-link {
+.nav-link-index_2 {
   text-decoration: none;
   color: #000;
   font-size: 24px;
@@ -439,21 +457,21 @@ main {
     place-content: center;
     background: radial-gradient(circle, rgb(27, 207, 108), rgb(94, 192, 48));
   }
-  .nav {
+  .nav-index_2 {
     align-items: center;
     display: flex;
     justify-content: center;
     background-color: chocolate;
-    width: 483px;
+    width: 474px;
   }
-  .nav-list {
+  .nav-list-index_2 {
     align-self: flex-start;
     list-style: none;
     display: flex;
     justify-content: center;
     width: 100%;
   }
-  .nav-link {
+  .nav-link-index_2 {
     text-decoration: none;
     color: #000;
     font-size: 24px;
@@ -544,7 +562,7 @@ main {
   display: flex;
   justify-content: space-between;
   background-color: rgb(192, 210, 30);
-  width: 1890px;
+  width: 100%;
 }
 
 .nav-list {
@@ -662,7 +680,7 @@ main {
     display: flex;
     justify-content: center;
     background-color: rgb(192, 210, 30);
-    width: 483px;
+    width: 100%;
   }
   .nav-list {
     align-self: center;
@@ -719,7 +737,7 @@ main {
     animation-timing-function: ease-out;
     position: relative;
     animation-duration: 3s;
-    width: 115px;
+    width: 110px;
     height: 200px;
   }
   @keyframes imagen_cabezas_animacion {
@@ -919,7 +937,7 @@ main {
     display: flex;
     justify-content: space-between;
     background-color: rgb(73, 69, 87);
-    width: 483px;
+    width: 473px;
   }
   .nav-list {
     align-self: flex-start;
@@ -1035,7 +1053,7 @@ main {
   background: radial-gradient(circle, rgb(48, 187, 192), rgb(30, 27, 207));
 }
 
-.nav_boss {
+.nav_final {
   align-items: center;
   display: flex;
   justify-content: space-between;
@@ -1043,7 +1061,7 @@ main {
   width: 1890px;
 }
 
-.nav-list {
+.nav-list_final {
   align-self: flex-start;
   list-style: none;
   display: flex;
@@ -1092,6 +1110,41 @@ main {
 
 .tienda {
   height: 1800px;
+}
+
+.footer_final {
+  background: radial-gradient(circle, rgb(9, 160, 9), rgb(19, 168, 131));
+  width: 100%;
+  height: 80px;
+  text-align: center;
+  display: flex;
+  flex-direction: none;
+  justify-content: center;
+  align-items: center;
+  flex-direction: none;
+  gap: none;
+}
+
+@media (max-width: 500px) {
+  .nav_final {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(192, 210, 30);
+    width: 467px;
+  }
+  .footer_final {
+    background: radial-gradient(circle, rgb(9, 160, 9), rgb(19, 168, 131));
+    width: 100%;
+    height: 80px;
+    text-align: center;
+    display: flex;
+    flex-direction: none;
+    justify-content: center;
+    align-items: center;
+    flex-direction: none;
+    gap: none;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
