@@ -11,7 +11,7 @@ $fondo: marron;
 }
 
 main{
-    height: 1100px;
+    height: 2700px;
 }
 
 .nav_boss{
@@ -125,6 +125,7 @@ main{
     color: transparent;
     background: linear-gradient(45deg, rgb(20, 116, 8), rgba(121, 12, 107, 0.726));
     background-clip: text;
+    text-align: center;
 
     &:hover{
         background: linear-gradient(95deg, rgba(121, 12, 107, 0.726), rgb(20, 116, 8) );
@@ -132,12 +133,60 @@ main{
     }
 }
 
-.footer_boss{
+.parrafo_boss_special{
+
+    color: transparent;
+    background: linear-gradient(45deg, rgb(142, 52, 202), rgba(241, 4, 230, 0.726));
+    background-clip: text;
+    text-align: center;
+
+    &:hover{
+        background: linear-gradient(95deg, rgba(241, 4, 230, 0.726), rgb(142, 52, 202) );
+        background-clip: text;
+    }
+}
+
+.parrafo_boss_planta{
+
+    color: transparent;
+    background: linear-gradient(45deg, rgb(4, 255, 38), rgb(230, 255, 7));
+    background-clip: text;
+    text-align: center;
+
+    &:hover{
+        background: linear-gradient(95deg, rgba(230, 255, 7), rgb(4, 255, 38) );
+        background-clip: text;
+    }
+}
+
+.footer_index_3{
     background: radial-gradient(circle, rgb(9, 160, 9), rgb(19, 168, 131));
     width: 100%;
-    height: 80px;
-    text-align: center;
-    @include flex(center, center, none, none)
+    height: 180px;
+    display: flex;
+    @include flex(none, center, none, none)
+}
+
+.texto_footer_index_3{
+    @include flex(end, end, none, none);
+    color: transparent;
+    background: linear-gradient(45deg, rgb(212, 209, 27), rgb(208, 231, 4));
+    background-clip: text;
+    padding: 20px;
+    position: relative;
+    top: 50px;
+    
+    
+}
+
+.redes_index_3{
+    display: flex;
+    @include flex(flex-end, flex-end, row, none);
+    position: relative;
+    left: 1550px;
+    top: 50px;
+    gap: 30px
+
 }
 
 @media (max-width: 500px){
@@ -154,9 +203,6 @@ main{
     }
 }
 
-main{
-    height: 1100px;
-}
 
 .nav_boss{
 
@@ -206,7 +252,28 @@ main{
     color: transparent;
     background: linear-gradient(45deg, rgb(212, 230, 55), rgb(94, 143, 4));
     background-clip: text;
-    font-size: 90px
+    font-size: 30px;
+    
+}
+
+.parrafo_boss_special{
+
+    @include flex(center, center, none, none);
+    color: transparent;
+    background: linear-gradient(45deg, rgb(142, 52, 202), rgba(241, 4, 230, 0.726));
+    background-clip: text;
+    font-size: 30px;
+    text-align: center
+}
+
+.parrafo_boss_planta{
+
+    @include flex(center, center, none, none);
+    color: transparent;
+    background: linear-gradient(45deg, rgb(4, 255, 38), rgb(230, 255, 7));
+    background-clip: text;
+    font-size: 30px;
+    text-align: center
 }
 
 .info_jefes{
@@ -253,7 +320,7 @@ main{
 
     50% {
             
-        left: 0px; top: 300px;
+        left: 0px; top: 200px;
         transform: scale(0.4);
     }
 
@@ -275,7 +342,6 @@ main{
     background-clip: text;
     font-size: 20px;
     width: 370px;
-    height: 300px;
     text-align: center;
 
     &:hover{
@@ -284,15 +350,38 @@ main{
     }
 }
 
-.footer_boss{
+.footer_index_3{
     background: radial-gradient(circle, rgb(9, 160, 9), rgb(19, 168, 131));
     width: 100%;
-    height: 80px;
-    @include flex(center, center, none, none)
+    height: 90px;
+    display: flex;
+    @include flex(none, center, none, none)
+}
+
+.texto_footer_index_3{
+    @include flex(end, end, none, none);
+    color: transparent;
+    background: linear-gradient(45deg, rgb(212, 209, 27), rgb(208, 231, 4));
+    background-clip: text;
+    padding: 20px;
+    position: relative;
+    top: 30px;
+    
+    
+}
+
+.redes_index_3{
+    display: flex;
+    @include flex(flex-end, flex-end, row, none);
+    position: relative;
+    left: 200px;
+    top: 25px;
+    gap: 20px
+
 }
 
 main{
-    height: 800px;
+    height: 1730px;
 }
 
 }

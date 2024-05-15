@@ -4,7 +4,6 @@ $fondo: azul;
     @if $fondo == azul{
         background-color: #191919;
         display: grid;
-        place-content: center;
         background: radial-gradient(circle, rgb(48, 187, 192), rgb(30, 27, 207));
     }
 }
@@ -20,6 +19,8 @@ $fondo: azul;
     background-color: rgb(192, 210, 30);
 
     width: 1890px;
+
+    border-radius: 15px;
 
 }
 
@@ -50,66 +51,363 @@ $fondo: azul;
 
 }
 
-.peluches{
+.menu_peluches{
 
     @include flex(center, center, column, none);
-    padding: 40px;
+
+    height: 1800px
 }
 
-.venta{
-
-    border-radius: 35px;
-}
-
-.comprar{
+.titulo_peluches{
     @include flex(center, center, none, none);
-    background-color: aqua;
-    border-radius: 10px;
-    width: 213px;
-    text-decoration: none;
+
+    color: transparent;
+
+    background: linear-gradient(45deg, rgb(250, 250, 249), rgb(134, 134, 132));
+
+    background-clip: text;
+}
+
+.contenedor_de_imagenes_peluches{
+
+    @include flex(center, center, none, none);
+
+    display: flex;
+
+    flex-direction: column;
+
+    object-fit: cover;
+
+
+}
+
+.contenedor_de_imagenes_peluches img{
+
+    display: flex;
+
+    border-radius: 120px;
+
+    width: 600px;
+
+    height: 600px;
+
+    transition: 1s;
 
     &:hover{
-        background: linear-gradient(95deg, rgba(121, 83, 12, 0.726), rgb(194, 64, 12) );
+        width: 670px;
+        height: 670px;
+    }
+
+    
+}
+
+.parrafo_peluche{
+    color: transparent;
+
+    background: linear-gradient(45deg, rgb(30, 255, 1), rgba(230, 255, 1, 0.726));
+
+    background-clip: text;
+
+    text-align: center;
+
+    &:hover{
+        background: linear-gradient(95deg, rgba(230, 255, 1, 0.726), rgb(30, 255, 1) );
+        
         background-clip: text;
     }
 }
 
-.tienda{
-    height: 1800px;
+.venta{
+    display: flex;
+
+    flex-direction: row;
 }
 
-.footer_final{
+.para_comprar{
+    @include flex(center, center, none, none);
 
-    background: radial-gradient(circle, rgb(9, 160, 9), rgb(19, 168, 131));
+    display: flex;
+
+    flex-direction: column;
+
+    padding: 20px;
+
+    border-radius: 20px;
+}
+
+.para_comprar img{
+    border-radius: 20px;
+}
+
+.para_comprar a{
+    background-color: blue;
+
+    padding: 20PX;
+
+    border-radius: 20px;
+
+    color: greenyellow;
+
+    text-decoration: none;
+
+    transition: 1s;
+
+    &:hover{
+        background-color: aquamarine;
+
+        color: #191919;
+    }
+}
+
+.footer_index_5{
+    background: radial-gradient(circle, rgb(1, 225, 241), rgb(3, 125, 134));
+
     width: 100%;
-    height: 80px;
-    text-align: center;
-    @include flex(center, center, none, none)
+
+    height: 100px;
+
+    align-items: center;
+
+    display: flex;
+
+    border-radius: 15px
+}
+
+.texto_footer_index_5{
+    @include flex(end, end, none, none);
+
+    color: transparent;
+
+    background: linear-gradient(45deg, rgb(0, 0, 0), rgb(0, 0, 0));
+
+    background-clip: text;
+
+    padding: 20px;
+
+    position: relative;
+
+    top: 30px;
+    
+    
+}
+
+.redes_index_5{
+    display: flex;
+
+    @include flex(flex-end, flex-end, row, none);
+
+    position: relative;
+
+    left: 1500px;
+
+    top: 22px;
+
+    gap: 20px
+
 }
 
 @media (max-width: 500px){
-
     .nav_final{
 
         align-items: center;
     
         display: flex;
     
-        justify-content: space-between;
+        justify-content: center;
     
         background-color: rgb(192, 210, 30);
     
-        width: 467px;
+        width: 100%;
+    
+        border-radius: 15px;
     
     }
-
-
-    .footer_final{
-
-        background: radial-gradient(circle, rgb(9, 160, 9), rgb(19, 168, 131));
+    
+    .nav-list_final{
+    
+        align-self: center;
+    
+        list-style: none;
+    
+        display: flex;
+    
+        justify-content: center;
+    
         width: 100%;
-        height: 80px;
+    }
+    
+    .nav-link{
+    
+        text-decoration: none;
+    
+        color: #000;
+    
+        font-size: 24px;
+    
+        padding: 15px;
+    
+        font-weight: bold;
+    
+    }
+    
+    .menu_peluches{
+    
+        @include flex(center, center, column, none);
+    
+        height: 3000px
+    }
+    
+    .titulo_peluches{
+        @include flex(center, center, none, none);
+    
+        color: transparent;
+    
+        background: linear-gradient(45deg, rgb(250, 250, 249), rgb(134, 134, 132));
+    
+        background-clip: text;
+
+        font-size: 40px;
+    }
+    
+    .contenedor_de_imagenes_peluches{
+    
+        @include flex(center, center, none, none);
+    
+        display: flex;
+    
+        flex-direction: column;
+    
+    
+    }
+    
+    .contenedor_de_imagenes_peluches img{
+    
+        display: flex;
+    
+        border-radius: 120px;
+    
+        width: 400px;
+    
+        height: 400px;
+    
+        transition: 1s;
+    
+        &:hover{
+            width: 430px;
+            height: 410px;
+        }
+    
+        
+    }
+    
+    .parrafo_peluche{
+        color: transparent;
+    
+        background: linear-gradient(45deg, rgb(30, 255, 1), rgba(230, 255, 1, 0.726));
+    
+        background-clip: text;
+    
         text-align: center;
-        @include flex(center, center, none, none)
+
+        font-size: 30px;
+
+        width: 335px;
+
+        height: 200px;
+    
+        &:hover{
+            background: linear-gradient(95deg, rgba(230, 255, 1, 0.726), rgb(30, 255, 1) );
+            
+            background-clip: text;
+        }
+    }
+    
+    .venta{
+        display: flex;
+    
+        flex-direction: column;
+    }
+    
+    .para_comprar{
+        @include flex(center, center, none, none);
+    
+        display: flex;
+    
+        flex-direction: column;
+    
+        padding: 20px;
+    
+        border-radius: 20px;
+    }
+    
+    .para_comprar img{
+        border-radius: 20px;
+    }
+    
+    .para_comprar a{
+        background-color: blue;
+    
+        padding: 20PX;
+    
+        border-radius: 20px;
+    
+        color: greenyellow;
+    
+        text-decoration: none;
+    
+        transition: 1s;
+    
+        &:hover{
+            background-color: aquamarine;
+    
+            color: #191919;
+        }
+    }
+    
+    .footer_index_5{
+        background: radial-gradient(circle, rgb(1, 225, 241), rgb(3, 125, 134));
+    
+        width: 100%;
+    
+        height: 100px;
+    
+        align-items: center;
+    
+        display: flex;
+    
+        border-radius: 15px
+    }
+    
+    .texto_footer_index_5{
+        @include flex(end, end, none, none);
+    
+        color: transparent;
+    
+        background: linear-gradient(45deg, rgb(0, 0, 0), rgb(0, 0, 0));
+    
+        background-clip: text;
+    
+        padding: 20px;
+    
+        position: relative;
+    
+        top: 30px;
+        
+        
+    }
+    
+    .redes_index_5{
+        display: flex;
+    
+        @include flex(flex-end, flex-end, row, none);
+    
+        position: relative;
+    
+        left: 80px;
+    
+        top: 25px;
+    
+        gap: 20px
+    
     }
 }

@@ -80,6 +80,7 @@
 .container {
   min-height: 100vh;
   max-height: 100%;
+  height: 1440px;
   display: grid;
   place-content: center center;
   place-items: center;
@@ -111,18 +112,31 @@ h1 {
   text-decoration: none;
   font-size: 1.7rem;
 }
-.btn-container .zombi_pequeño {
+.btn-container .zombi_pequeño_izquierda {
   height: 70px;
   width: 62px;
-  animation-name: mini_cabeza;
+  animation-name: mini_cabeza_izquierda;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-out;
+  animation-duration: 8s;
+}
+.btn-container .zombi_pequeño_derecha {
+  height: 70px;
+  width: 62px;
+  animation-name: mini_cabeza_derecha;
   animation-iteration-count: infinite;
   animation-timing-function: ease-out;
   animation-duration: 8s;
 }
 
-@keyframes mini_cabeza {
+@keyframes mini_cabeza_izquierda {
   100% {
     transform: rotate(360deg);
+  }
+}
+@keyframes mini_cabeza_derecha {
+  100% {
+    transform: rotate(-360deg);
   }
 }
 .btn-primary {
@@ -269,19 +283,126 @@ h1 {
     transform: rotate(720deg);
   }
 }
-.footer {
+.footer_index_1 {
   background: radial-gradient(circle, rgb(48, 192, 55), rgb(27, 207, 162));
   width: 1900px;
-  height: 200px;
-  text-align: center;
-  display: flex;
-  flex-direction: none;
-  justify-content: center;
+  height: 160px;
   align-items: center;
-  flex-direction: none;
-  gap: none;
+  display: flex;
 }
 
+.texto_footer {
+  display: flex;
+  flex-direction: none;
+  justify-content: end;
+  align-items: end;
+  flex-direction: none;
+  gap: none;
+  color: transparent;
+  background: linear-gradient(45deg, rgb(224, 59, 9), rgb(231, 159, 4));
+  background-clip: text;
+  padding: 20px;
+  position: relative;
+  top: 50px;
+}
+
+.titulo-plantas {
+  color: transparent;
+  background: linear-gradient(45deg, rgb(201, 124, 201), rgb(194, 12, 43));
+  background-clip: text;
+  transition: 2s;
+}
+
+.redes {
+  display: flex;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: flex-end;
+  flex-direction: row;
+  gap: none;
+  position: relative;
+  left: 1550px;
+  top: 50px;
+  gap: 30px;
+}
+
+.instagram {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: flex-end;
+  flex-direction: row;
+  gap: none;
+  width: 50px;
+  height: 50px;
+}
+
+.twitter {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: flex-end;
+  flex-direction: row;
+  gap: none;
+  width: 50px;
+  height: 50px;
+}
+
+.gato_pequeño_izquierda {
+  height: 148px;
+  width: 126px;
+  animation-name: mini_cabeza_izquierda;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-out;
+  animation-duration: 8s;
+}
+
+.gato_pequeño_derecha {
+  height: 148px;
+  width: 126px;
+  animation-name: mini_cabeza_derecha;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-out;
+  animation-duration: 8s;
+}
+
+.cabeza_planta {
+  animation-name: cabeza_animacion_planta;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-out;
+  animation-duration: 8s;
+}
+
+@keyframes cabeza_animacion_planta {
+  0% {
+    transform: rotate(720deg);
+  }
+  12% {
+    transform: translate(-100px, 0px);
+  }
+  25% {
+    transform: rotate(720deg);
+  }
+  37% {
+    transform: translate(0px, 0px);
+  }
+  49% {
+    transform: rotate(720deg);
+  }
+  61% {
+    transform: translate(100px, 0px);
+  }
+  73% {
+    transform: rotate(720deg);
+  }
+  83% {
+    transform: translate(0px, 0px);
+  }
+  100% {
+    transform: rotate(720deg);
+  }
+}
 @media (max-width: 500px) {
   .footer {
     width: 473px;
@@ -338,6 +459,62 @@ h1 {
       transform: rotate(720deg) scale(0.8);
     }
   }
+  .gato_pequeño_izquierda {
+    height: 100px;
+    width: 72px;
+    animation-name: mini_cabeza_izquierda;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-out;
+    animation-duration: 8s;
+  }
+  .gato_pequeño_derecha {
+    height: 100px;
+    width: 72px;
+    animation-name: mini_cabeza_derecha;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-out;
+    animation-duration: 8s;
+  }
+  .footer_index_1 {
+    background: radial-gradient(circle, rgb(48, 192, 55), rgb(27, 207, 162));
+    width: 100%;
+    height: 160px;
+    align-items: center;
+    display: flex;
+  }
+  .redes {
+    display: flex;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: flex-end;
+    flex-direction: row;
+    gap: none;
+    position: relative;
+    left: 200px;
+    top: 50px;
+    gap: 20px;
+  }
+  .instagram {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: flex-end;
+    flex-direction: row;
+    gap: none;
+    width: 30px;
+    height: 30px;
+  }
+  .twitter {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: flex-end;
+    flex-direction: row;
+    gap: none;
+    width: 30px;
+    height: 30px;
+  }
 }
 .fondo_verde {
   background-color: #191919;
@@ -346,8 +523,8 @@ h1 {
   background: radial-gradient(circle, rgb(27, 207, 108), rgb(94, 192, 48));
 }
 
-main {
-  height: 1100px;
+.menu_roble {
+  height: 2700px;
 }
 
 .nav-index_2 {
@@ -396,18 +573,76 @@ main {
   gap: none;
 }
 
+.zombis_fuertes {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  gap: none;
+  position: relative;
+  top: 155px;
+}
+
+.super_girasol {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  gap: none;
+  position: relative;
+  top: 310px;
+}
+
 .el_roble {
   border-radius: 35px;
+}
+
+.el_yeti {
+  border-radius: 35px;
+  width: 600px;
+}
+
+.el_girasol {
+  border-radius: 35px;
+  width: 900px;
 }
 
 .parrafo_roble {
   color: transparent;
   background: linear-gradient(45deg, rgb(194, 64, 12), rgba(121, 83, 12, 0.726));
   background-clip: text;
+  transition: 1s;
 }
 .parrafo_roble:hover {
   background: linear-gradient(95deg, rgba(121, 83, 12, 0.726), rgb(194, 64, 12));
   background-clip: text;
+  font-size: 60px;
+}
+
+.parrafo_yeti {
+  color: transparent;
+  background: linear-gradient(45deg, rgb(4, 174, 180), rgba(0, 17, 253, 0.726));
+  background-clip: text;
+}
+.parrafo_yeti:hover {
+  background: linear-gradient(95deg, rgba(0, 17, 253, 0.726), rgb(4, 174, 180));
+  background-clip: text;
+  font-size: 60px;
+  transition: 1s;
+}
+
+.parrafo_girasol {
+  color: transparent;
+  background: linear-gradient(45deg, rgb(211, 235, 3), rgba(221, 240, 48, 0.726));
+  background-clip: text;
+  transition: 1s;
+}
+.parrafo_girasol:hover {
+  background: linear-gradient(95deg, rgba(221, 240, 48, 0.726), rgb(211, 235, 3));
+  background-clip: text;
+  font-size: 52px;
 }
 
 .cabeza_del_tronco {
@@ -418,6 +653,30 @@ main {
   object-fit: cover;
   height: 100px;
   width: 100px;
+}
+
+.cabeza_del_yeti {
+  animation-name: cabeza_del_yeti_animacion;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-out;
+  animation-duration: 8s;
+  object-fit: cover;
+  height: 100px;
+  width: 100px;
+  position: relative;
+  top: 160px;
+}
+
+.cabeza_del_girasol {
+  animation-name: cabeza_del_girasol_animacion;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-out;
+  animation-duration: 8s;
+  object-fit: cover;
+  height: 100px;
+  width: 100px;
+  position: relative;
+  top: 320px;
 }
 
 @keyframes cabeza_del_tronco_animacion {
@@ -437,17 +696,80 @@ main {
     transform: translate(0px, 0px);
   }
 }
-.footer_roble {
+@keyframes cabeza_del_yeti_animacion {
+  0% {
+    transform: translate(0px, 0px);
+  }
+  25% {
+    transform: translate(300px, 0px);
+  }
+  50% {
+    transform: translate(0px, 0px);
+  }
+  75% {
+    transform: translate(300px, 0px);
+  }
+  100% {
+    transform: translate(0px, 0px);
+  }
+}
+@keyframes cabeza_del_girasol_animacion {
+  0% {
+    transform: translate(0px, 0px);
+  }
+  25% {
+    transform: translate(300px, 0px);
+  }
+  50% {
+    transform: translate(0px, 0px);
+  }
+  75% {
+    transform: translate(300px, 0px);
+  }
+  100% {
+    transform: translate(0px, 0px);
+  }
+}
+.footer_index_2 {
   background: radial-gradient(circle, rgb(9, 160, 9), rgb(19, 168, 131));
   width: 100%;
-  height: 80px;
-  text-align: center;
+  height: 180px;
+  display: flex;
   display: flex;
   flex-direction: none;
-  justify-content: center;
+  justify-content: none;
   align-items: center;
   flex-direction: none;
   gap: none;
+}
+
+.texto_footer_index_2 {
+  display: flex;
+  flex-direction: none;
+  justify-content: end;
+  align-items: end;
+  flex-direction: none;
+  gap: none;
+  color: transparent;
+  background: linear-gradient(45deg, rgb(28, 187, 7), rgb(106, 231, 4));
+  background-clip: text;
+  padding: 20px;
+  position: relative;
+  top: 50px;
+}
+
+.redes_index_2 {
+  display: flex;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: flex-end;
+  flex-direction: row;
+  gap: none;
+  position: relative;
+  left: 1550px;
+  top: 50px;
+  gap: 30px;
 }
 
 @media (max-width: 500px) {
@@ -490,7 +812,7 @@ main {
     background: linear-gradient(45deg, rgb(211, 158, 13), rgb(214, 37, 10));
     background-clip: text;
     transition: 2s;
-    font-size: 45px;
+    font-size: 30px;
   }
   .plantas_fuertes {
     display: flex;
@@ -500,7 +822,37 @@ main {
     flex-direction: column;
     gap: none;
   }
+  .zombis_fuertes {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: none;
+    position: relative;
+    top: 155px;
+  }
+  .super_girasol {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: none;
+    position: relative;
+    top: 310px;
+  }
   .el_roble {
+    border-radius: 35px;
+    height: 400px;
+    width: 400px;
+  }
+  .el_yeti {
+    border-radius: 35px;
+    height: 400px;
+    width: 400px;
+  }
+  .el_girasol {
     border-radius: 35px;
     height: 400px;
     width: 400px;
@@ -515,6 +867,31 @@ main {
   .parrafo_roble:hover {
     background: linear-gradient(95deg, rgba(121, 83, 12, 0.726), rgb(194, 64, 12));
     background-clip: text;
+    font-size: 35px;
+  }
+  .parrafo_yeti {
+    color: transparent;
+    background: linear-gradient(45deg, rgb(4, 174, 180), rgba(0, 17, 253, 0.726));
+    background-clip: text;
+    width: 60%;
+    font-size: 35px;
+  }
+  .parrafo_yeti:hover {
+    background: linear-gradient(95deg, rgba(0, 17, 253, 0.726), rgb(4, 174, 180));
+    background-clip: text;
+    font-size: 35px;
+  }
+  .parrafo_girasol {
+    color: transparent;
+    background: linear-gradient(45deg, rgb(211, 235, 3), rgba(221, 240, 48, 0.726));
+    background-clip: text;
+    width: 60%;
+    font-size: 35px;
+  }
+  .parrafo_girasol:hover {
+    background: linear-gradient(95deg, rgba(221, 240, 48, 0.726), rgb(211, 235, 3));
+    background-clip: text;
+    font-size: 35px;
   }
   .cabeza_del_tronco {
     animation-name: cabeza_del_tronco_animacion;
@@ -522,7 +899,6 @@ main {
     animation-timing-function: ease-out;
     animation-duration: 8s;
     object-fit: cover;
-    height: 20%;
     width: 20%;
   }
   @keyframes cabeza_del_tronco_animacion {
@@ -530,20 +906,67 @@ main {
       transform: translate(0px, 0px) scale(0.6);
     }
     25% {
-      transform: translate(325px, 0px) scale(0.6);
+      transform: translate(300px, 0px) scale(0.6);
     }
     50% {
       transform: translate(0px, 0px) scale(0.6);
     }
     75% {
-      transform: translate(325px, 0px) scale(0.6);
+      transform: translate(300px, 0px) scale(0.6);
     }
     100% {
       transform: translate(0px, 0px) scale(0.6);
     }
   }
+  @keyframes cabeza_del_yeti_animacion {
+    0% {
+      transform: translate(0px, 0px) scale(0.6);
+    }
+    25% {
+      transform: translate(300px, 0px) scale(0.6);
+    }
+    50% {
+      transform: translate(0px, 0px) scale(0.6);
+    }
+    75% {
+      transform: translate(300px, 0px) scale(0.6);
+    }
+    100% {
+      transform: translate(0px, 0px) scale(0.6);
+    }
+  }
+  @keyframes cabeza_del_girasol_animacion {
+    0% {
+      transform: translate(0px, 0px) scale(0.6);
+    }
+    25% {
+      transform: translate(300px, 0px) scale(0.6);
+    }
+    50% {
+      transform: translate(0px, 0px) scale(0.6);
+    }
+    75% {
+      transform: translate(300px, 0px) scale(0.6);
+    }
+    100% {
+      transform: translate(0px, 0px) scale(0.6);
+    }
+  }
+  .redes_index_2 {
+    display: flex;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: flex-end;
+    flex-direction: row;
+    gap: none;
+    position: relative;
+    left: 200px;
+    top: 50px;
+    gap: 20px;
+  }
   .menu_roble {
-    height: 1100px;
+    height: 3130px;
   }
 }
 .fondo_marron {
@@ -554,7 +977,7 @@ main {
 }
 
 main {
-  height: 1100px;
+  height: 2700px;
 }
 
 .nav_boss {
@@ -646,23 +1069,75 @@ main {
   color: transparent;
   background: linear-gradient(45deg, rgb(20, 116, 8), rgba(121, 12, 107, 0.726));
   background-clip: text;
+  text-align: center;
 }
 .parrafo_boss:hover {
   background: linear-gradient(95deg, rgba(121, 12, 107, 0.726), rgb(20, 116, 8));
   background-clip: text;
 }
 
-.footer_boss {
+.parrafo_boss_special {
+  color: transparent;
+  background: linear-gradient(45deg, rgb(142, 52, 202), rgba(241, 4, 230, 0.726));
+  background-clip: text;
+  text-align: center;
+}
+.parrafo_boss_special:hover {
+  background: linear-gradient(95deg, rgba(241, 4, 230, 0.726), rgb(142, 52, 202));
+  background-clip: text;
+}
+
+.parrafo_boss_planta {
+  color: transparent;
+  background: linear-gradient(45deg, rgb(4, 255, 38), rgb(230, 255, 7));
+  background-clip: text;
+  text-align: center;
+}
+.parrafo_boss_planta:hover {
+  background: linear-gradient(95deg, rgb(230, 255, 7), rgb(4, 255, 38));
+  background-clip: text;
+}
+
+.footer_index_3 {
   background: radial-gradient(circle, rgb(9, 160, 9), rgb(19, 168, 131));
   width: 100%;
-  height: 80px;
-  text-align: center;
+  height: 180px;
+  display: flex;
   display: flex;
   flex-direction: none;
-  justify-content: center;
+  justify-content: none;
   align-items: center;
   flex-direction: none;
   gap: none;
+}
+
+.texto_footer_index_3 {
+  display: flex;
+  flex-direction: none;
+  justify-content: end;
+  align-items: end;
+  flex-direction: none;
+  gap: none;
+  color: transparent;
+  background: linear-gradient(45deg, rgb(212, 209, 27), rgb(208, 231, 4));
+  background-clip: text;
+  padding: 20px;
+  position: relative;
+  top: 50px;
+}
+
+.redes_index_3 {
+  display: flex;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: flex-end;
+  flex-direction: row;
+  gap: none;
+  position: relative;
+  left: 1550px;
+  top: 50px;
+  gap: 30px;
 }
 
 @media (max-width: 500px) {
@@ -671,9 +1146,6 @@ main {
     display: grid;
     place-content: center;
     background: radial-gradient(circle, rgb(156, 82, 13), rgb(212, 166, 37));
-  }
-  main {
-    height: 1100px;
   }
   .nav_boss {
     align-items: center;
@@ -707,7 +1179,33 @@ main {
     color: transparent;
     background: linear-gradient(45deg, rgb(212, 230, 55), rgb(94, 143, 4));
     background-clip: text;
-    font-size: 90px;
+    font-size: 30px;
+  }
+  .parrafo_boss_special {
+    display: flex;
+    flex-direction: none;
+    justify-content: center;
+    align-items: center;
+    flex-direction: none;
+    gap: none;
+    color: transparent;
+    background: linear-gradient(45deg, rgb(142, 52, 202), rgba(241, 4, 230, 0.726));
+    background-clip: text;
+    font-size: 30px;
+    text-align: center;
+  }
+  .parrafo_boss_planta {
+    display: flex;
+    flex-direction: none;
+    justify-content: center;
+    align-items: center;
+    flex-direction: none;
+    gap: none;
+    color: transparent;
+    background: linear-gradient(45deg, rgb(4, 255, 38), rgb(230, 255, 7));
+    background-clip: text;
+    font-size: 30px;
+    text-align: center;
   }
   .info_jefes {
     display: flex;
@@ -748,7 +1246,7 @@ main {
     }
     50% {
       left: 0px;
-      top: 300px;
+      top: 200px;
       transform: scale(0.4);
     }
     100% {
@@ -763,26 +1261,53 @@ main {
     background-clip: text;
     font-size: 20px;
     width: 370px;
-    height: 300px;
     text-align: center;
   }
   .parrafo_boss:hover {
     background: linear-gradient(95deg, rgba(121, 12, 107, 0.726), rgb(20, 116, 8));
     background-clip: text;
   }
-  .footer_boss {
+  .footer_index_3 {
     background: radial-gradient(circle, rgb(9, 160, 9), rgb(19, 168, 131));
     width: 100%;
-    height: 80px;
+    height: 90px;
+    display: flex;
     display: flex;
     flex-direction: none;
-    justify-content: center;
+    justify-content: none;
     align-items: center;
     flex-direction: none;
     gap: none;
   }
+  .texto_footer_index_3 {
+    display: flex;
+    flex-direction: none;
+    justify-content: end;
+    align-items: end;
+    flex-direction: none;
+    gap: none;
+    color: transparent;
+    background: linear-gradient(45deg, rgb(212, 209, 27), rgb(208, 231, 4));
+    background-clip: text;
+    padding: 20px;
+    position: relative;
+    top: 30px;
+  }
+  .redes_index_3 {
+    display: flex;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: flex-end;
+    flex-direction: row;
+    gap: none;
+    position: relative;
+    left: 200px;
+    top: 25px;
+    gap: 20px;
+  }
   main {
-    height: 800px;
+    height: 1730px;
   }
 }
 .fondo_gris {
@@ -798,6 +1323,7 @@ main {
   justify-content: space-between;
   background-color: rgb(73, 69, 87);
   width: 1890px;
+  border-radius: 25px;
 }
 
 .nav-list {
@@ -908,17 +1434,41 @@ main {
   text-align: center;
 }
 
-.footer_power {
-  background: radial-gradient(circle, rgb(228, 9, 9), rgb(228, 9, 9));
+.footer_index_4 {
+  background: radial-gradient(circle, rgb(241, 1, 1), rgb(134, 3, 3));
   width: 100%;
-  height: 80px;
-  text-align: center;
+  height: 100px;
+  align-items: center;
+  display: flex;
+}
+
+.texto_footer_index_4 {
   display: flex;
   flex-direction: none;
-  justify-content: center;
-  align-items: center;
+  justify-content: end;
+  align-items: end;
   flex-direction: none;
   gap: none;
+  color: transparent;
+  background: linear-gradient(45deg, rgb(0, 0, 0), rgb(0, 0, 0));
+  background-clip: text;
+  padding: 20px;
+  position: relative;
+  top: 30px;
+}
+
+.redes_index_4 {
+  display: flex;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: flex-end;
+  flex-direction: row;
+  gap: none;
+  position: relative;
+  left: 1500px;
+  top: 22px;
+  gap: 20px;
 }
 
 .super_menu {
@@ -1022,7 +1572,7 @@ main {
     color: transparent;
     background: linear-gradient(45deg, rgb(209, 40, 28), rgba(0, 0, 0, 0.726));
     background-clip: text;
-    width: 60%;
+    width: 70%;
     height: 155px;
     font-size: 50px;
     text-align: center;
@@ -1045,11 +1595,44 @@ main {
   .super_menu {
     height: 2675px;
   }
+  .footer_index_4 {
+    background: radial-gradient(circle, rgb(241, 1, 1), rgb(134, 3, 3));
+    width: 100%;
+    height: 100px;
+    align-items: center;
+    display: flex;
+  }
+  .texto_footer_index_4 {
+    display: flex;
+    flex-direction: none;
+    justify-content: end;
+    align-items: end;
+    flex-direction: none;
+    gap: none;
+    color: transparent;
+    background: linear-gradient(45deg, rgb(0, 0, 0), rgb(0, 0, 0));
+    background-clip: text;
+    padding: 20px;
+    position: relative;
+    top: 30px;
+  }
+  .redes_index_4 {
+    display: flex;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: flex-end;
+    flex-direction: row;
+    gap: none;
+    position: relative;
+    left: 155px;
+    top: 30px;
+    gap: 20px;
+  }
 }
 .fondo_azul {
   background-color: #191919;
   display: grid;
-  place-content: center;
   background: radial-gradient(circle, rgb(48, 187, 192), rgb(30, 27, 207));
 }
 
@@ -1059,6 +1642,7 @@ main {
   justify-content: space-between;
   background-color: rgb(192, 210, 30);
   width: 1890px;
+  border-radius: 15px;
 }
 
 .nav-list_final {
@@ -1077,73 +1661,279 @@ main {
   font-weight: bold;
 }
 
-.peluches {
+.menu_peluches {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   flex-direction: column;
   gap: none;
-  padding: 40px;
-}
-
-.venta {
-  border-radius: 35px;
-}
-
-.comprar {
-  display: flex;
-  flex-direction: none;
-  justify-content: center;
-  align-items: center;
-  flex-direction: none;
-  gap: none;
-  background-color: aqua;
-  border-radius: 10px;
-  width: 213px;
-  text-decoration: none;
-}
-.comprar:hover {
-  background: linear-gradient(95deg, rgba(121, 83, 12, 0.726), rgb(194, 64, 12));
-  background-clip: text;
-}
-
-.tienda {
   height: 1800px;
 }
 
-.footer_final {
-  background: radial-gradient(circle, rgb(9, 160, 9), rgb(19, 168, 131));
-  width: 100%;
-  height: 80px;
-  text-align: center;
+.titulo_peluches {
   display: flex;
   flex-direction: none;
   justify-content: center;
   align-items: center;
   flex-direction: none;
   gap: none;
+  color: transparent;
+  background: linear-gradient(45deg, rgb(250, 250, 249), rgb(134, 134, 132));
+  background-clip: text;
+}
+
+.contenedor_de_imagenes_peluches {
+  display: flex;
+  flex-direction: none;
+  justify-content: center;
+  align-items: center;
+  flex-direction: none;
+  gap: none;
+  display: flex;
+  flex-direction: column;
+  object-fit: cover;
+}
+
+.contenedor_de_imagenes_peluches img {
+  display: flex;
+  border-radius: 120px;
+  width: 600px;
+  height: 600px;
+  transition: 1s;
+}
+.contenedor_de_imagenes_peluches img:hover {
+  width: 670px;
+  height: 670px;
+}
+
+.parrafo_peluche {
+  color: transparent;
+  background: linear-gradient(45deg, rgb(30, 255, 1), rgba(230, 255, 1, 0.726));
+  background-clip: text;
+  text-align: center;
+}
+.parrafo_peluche:hover {
+  background: linear-gradient(95deg, rgba(230, 255, 1, 0.726), rgb(30, 255, 1));
+  background-clip: text;
+}
+
+.venta {
+  display: flex;
+  flex-direction: row;
+}
+
+.para_comprar {
+  display: flex;
+  flex-direction: none;
+  justify-content: center;
+  align-items: center;
+  flex-direction: none;
+  gap: none;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  border-radius: 20px;
+}
+
+.para_comprar img {
+  border-radius: 20px;
+}
+
+.para_comprar a {
+  background-color: blue;
+  padding: 20PX;
+  border-radius: 20px;
+  color: greenyellow;
+  text-decoration: none;
+  transition: 1s;
+}
+.para_comprar a:hover {
+  background-color: aquamarine;
+  color: #191919;
+}
+
+.footer_index_5 {
+  background: radial-gradient(circle, rgb(1, 225, 241), rgb(3, 125, 134));
+  width: 100%;
+  height: 100px;
+  align-items: center;
+  display: flex;
+  border-radius: 15px;
+}
+
+.texto_footer_index_5 {
+  display: flex;
+  flex-direction: none;
+  justify-content: end;
+  align-items: end;
+  flex-direction: none;
+  gap: none;
+  color: transparent;
+  background: linear-gradient(45deg, rgb(0, 0, 0), rgb(0, 0, 0));
+  background-clip: text;
+  padding: 20px;
+  position: relative;
+  top: 30px;
+}
+
+.redes_index_5 {
+  display: flex;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: flex-end;
+  flex-direction: row;
+  gap: none;
+  position: relative;
+  left: 1500px;
+  top: 22px;
+  gap: 20px;
 }
 
 @media (max-width: 500px) {
   .nav_final {
     align-items: center;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     background-color: rgb(192, 210, 30);
-    width: 467px;
-  }
-  .footer_final {
-    background: radial-gradient(circle, rgb(9, 160, 9), rgb(19, 168, 131));
     width: 100%;
-    height: 80px;
-    text-align: center;
+    border-radius: 15px;
+  }
+  .nav-list_final {
+    align-self: center;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+  .nav-link {
+    text-decoration: none;
+    color: #000;
+    font-size: 24px;
+    padding: 15px;
+    font-weight: bold;
+  }
+  .menu_peluches {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: none;
+    height: 3000px;
+  }
+  .titulo_peluches {
     display: flex;
     flex-direction: none;
     justify-content: center;
     align-items: center;
     flex-direction: none;
     gap: none;
+    color: transparent;
+    background: linear-gradient(45deg, rgb(250, 250, 249), rgb(134, 134, 132));
+    background-clip: text;
+    font-size: 40px;
+  }
+  .contenedor_de_imagenes_peluches {
+    display: flex;
+    flex-direction: none;
+    justify-content: center;
+    align-items: center;
+    flex-direction: none;
+    gap: none;
+    display: flex;
+    flex-direction: column;
+  }
+  .contenedor_de_imagenes_peluches img {
+    display: flex;
+    border-radius: 120px;
+    width: 400px;
+    height: 400px;
+    transition: 1s;
+  }
+  .contenedor_de_imagenes_peluches img:hover {
+    width: 430px;
+    height: 410px;
+  }
+  .parrafo_peluche {
+    color: transparent;
+    background: linear-gradient(45deg, rgb(30, 255, 1), rgba(230, 255, 1, 0.726));
+    background-clip: text;
+    text-align: center;
+    font-size: 30px;
+    width: 335px;
+    height: 200px;
+  }
+  .parrafo_peluche:hover {
+    background: linear-gradient(95deg, rgba(230, 255, 1, 0.726), rgb(30, 255, 1));
+    background-clip: text;
+  }
+  .venta {
+    display: flex;
+    flex-direction: column;
+  }
+  .para_comprar {
+    display: flex;
+    flex-direction: none;
+    justify-content: center;
+    align-items: center;
+    flex-direction: none;
+    gap: none;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    border-radius: 20px;
+  }
+  .para_comprar img {
+    border-radius: 20px;
+  }
+  .para_comprar a {
+    background-color: blue;
+    padding: 20PX;
+    border-radius: 20px;
+    color: greenyellow;
+    text-decoration: none;
+    transition: 1s;
+  }
+  .para_comprar a:hover {
+    background-color: aquamarine;
+    color: #191919;
+  }
+  .footer_index_5 {
+    background: radial-gradient(circle, rgb(1, 225, 241), rgb(3, 125, 134));
+    width: 100%;
+    height: 100px;
+    align-items: center;
+    display: flex;
+    border-radius: 15px;
+  }
+  .texto_footer_index_5 {
+    display: flex;
+    flex-direction: none;
+    justify-content: end;
+    align-items: end;
+    flex-direction: none;
+    gap: none;
+    color: transparent;
+    background: linear-gradient(45deg, rgb(0, 0, 0), rgb(0, 0, 0));
+    background-clip: text;
+    padding: 20px;
+    position: relative;
+    top: 30px;
+  }
+  .redes_index_5 {
+    display: flex;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: flex-end;
+    flex-direction: row;
+    gap: none;
+    position: relative;
+    left: 80px;
+    top: 25px;
+    gap: 20px;
   }
 }
 

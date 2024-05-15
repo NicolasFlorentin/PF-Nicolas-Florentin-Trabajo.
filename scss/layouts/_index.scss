@@ -55,6 +55,7 @@ $fondo: azul;
 .container{
     min-height: 100vh;
     max-height: 100%;
+    height: 1440px;
     display: grid;
     place-content: center center;
     place-items: center;
@@ -79,7 +80,6 @@ h1{
 }
 
 
-
 .btn-container{
     display: flex;
     align-items: center;
@@ -90,24 +90,45 @@ a{
     font-size: 1.7rem;
  }
 
-.zombi_pequeño{
+.zombi_pequeño_izquierda{
 
     height: 70px;
     width: 62px;
-    animation-name: mini_cabeza;
+    animation-name: mini_cabeza_izquierda;
     animation-iteration-count: infinite;
     animation-timing-function: ease-out;
     animation-duration: 8s;
 
 }
 
+.zombi_pequeño_derecha{
+
+    height: 70px;
+    width: 62px;
+    animation-name: mini_cabeza_derecha;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-out;
+    animation-duration: 8s;
+
 }
 
-    @keyframes mini_cabeza{
+
+}
+
+    @keyframes mini_cabeza_izquierda{
 
 
         100%{
             transform: rotate(360deg);
+        }
+
+    }
+
+    @keyframes mini_cabeza_derecha{
+
+
+        100%{
+            transform: rotate(-360deg);
         }
 
     }
@@ -208,13 +229,146 @@ a{
         
     }
 
-    .footer{
+    .footer_index_1{
         background: radial-gradient(circle, rgb(48, 192, 55), rgb(27, 207, 162));
         width: 1900px;
-        height: 200px;
-        text-align: center;
-        @include flex(center, center, none, none)
+        height: 160px;
+        align-items: center;
+        display: flex;
     }
+
+    .texto_footer{
+        @include flex(end, end, none, none);
+        color: transparent;
+        background: linear-gradient(45deg, rgb(224, 59, 9), rgb(231, 159, 4));
+        background-clip: text;
+        padding: 20px;
+        position: relative;
+        top: 50px;
+        
+        
+    }
+
+    .titulo-plantas{
+        color: transparent;
+        background: linear-gradient(45deg, rgb(201, 124, 201), rgb(194, 12, 43));
+        background-clip: text;
+        transition: 2s;
+    }
+
+    .redes{
+        display: flex;
+        @include flex(flex-end, flex-end, row, none);
+        position: relative;
+        left: 1550px;
+        top: 50px;
+        gap: 30px
+
+    }
+
+    .instagram{
+        @include flex(flex-end, flex-end, row, none);
+        width: 50px;
+        height: 50px;
+    }
+
+    .twitter{
+        @include flex(flex-end, flex-end, row, none);
+        width: 50px;
+        height: 50px;
+    }
+
+    .gato_pequeño_izquierda{
+
+        height: 148px;
+        width: 126px;
+        animation-name: mini_cabeza_izquierda;
+        animation-iteration-count: infinite;
+        animation-timing-function: ease-out;
+        animation-duration: 8s;
+    
+    }
+
+    .gato_pequeño_derecha{
+
+        height: 148px;
+        width: 126px;
+        animation-name: mini_cabeza_derecha;
+        animation-iteration-count: infinite;
+        animation-timing-function: ease-out;
+        animation-duration: 8s;
+    
+    }
+
+
+
+    .cabeza_planta{
+        animation-name: cabeza_animacion_planta;
+        animation-iteration-count: infinite;
+        animation-timing-function: ease-out;
+        animation-duration: 8s;
+    }
+    
+    
+        @keyframes cabeza_animacion_planta {
+    
+            0% {
+            
+                    transform: rotate(720deg) ;
+                  
+            }
+    
+            12% {
+                
+                    transform: translate(-100px, 0px);
+                  
+            }
+    
+            25% {
+                
+                transform: rotate(720deg);
+              
+        }
+    
+            37% {
+                
+                transform: translate(0px, 0px);
+              
+            }
+    
+            49% {
+                
+                transform: rotate(720deg);
+              
+            }
+            
+            61% {
+                
+                transform: translate(100px, 0px);
+              
+            } 
+    
+            73% {
+                
+                transform: rotate(720deg);
+              
+            }
+    
+            83% {
+                
+                transform: translate(0px, 0px);
+              
+            }
+    
+            100% {
+                
+                transform: rotate(720deg);
+              
+            }
+            
+        }
+
+    
 
     @media (max-width: 500px){
 
@@ -324,6 +478,58 @@ a{
               
             }
             
+        }
+
+        .gato_pequeño_izquierda{
+
+            height: 100px;
+            width: 72px;
+            animation-name: mini_cabeza_izquierda;
+            animation-iteration-count: infinite;
+            animation-timing-function: ease-out;
+            animation-duration: 8s;
+        
+        }
+
+        .gato_pequeño_derecha{
+
+            height: 100px;
+            width: 72px;
+            animation-name: mini_cabeza_derecha;
+            animation-iteration-count: infinite;
+            animation-timing-function: ease-out;
+            animation-duration: 8s;
+        
+        }
+
+        .footer_index_1{
+            background: radial-gradient(circle, rgb(48, 192, 55), rgb(27, 207, 162));
+            width: 100%;
+            height: 160px;
+            align-items: center;
+            display: flex;
+        }
+
+        .redes{
+            display: flex;
+            @include flex(flex-end, flex-end, row, none);
+            position: relative;
+            left: 200px;
+            top: 50px;
+            gap: 20px
+    
+        }
+    
+        .instagram{
+            @include flex(flex-end, flex-end, row, none);
+            width: 30px;
+            height: 30px;
+        }
+    
+        .twitter{
+            @include flex(flex-end, flex-end, row, none);
+            width: 30px;
+            height: 30px;
         }
 
 

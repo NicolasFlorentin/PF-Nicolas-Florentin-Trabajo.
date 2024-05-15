@@ -10,9 +10,10 @@ $fondo: verde;
     }
 }
 
-main{
-    height: 1100px;
+.menu_roble{
+    height: 2700px;
 }
+
 .nav-index_2{
 
     align-items: center;
@@ -69,9 +70,34 @@ main{
     @include flex(center, center, row, none);
 }
 
+.zombis_fuertes{
+
+    @include flex(center, center, row, none);
+    position: relative;
+    top: 155px;
+}
+
+.super_girasol{
+
+    @include flex(center, center, row, none);
+    position: relative;
+    top: 310px;
+}
+
+
 .el_roble{
 
     border-radius: 35px;
+}
+
+.el_yeti{
+    border-radius: 35px;
+    width: 600px;
+}
+
+.el_girasol{
+    border-radius: 35px;
+    width: 900px;
 }
 
 .parrafo_roble{
@@ -79,10 +105,40 @@ main{
     color: transparent;
     background: linear-gradient(45deg, rgb(194, 64, 12), rgba(121, 83, 12, 0.726));
     background-clip: text;
+    transition: 1s;
 
     &:hover{
         background: linear-gradient(95deg, rgba(121, 83, 12, 0.726), rgb(194, 64, 12) );
         background-clip: text;
+        font-size: 60px;
+    }
+}
+
+.parrafo_yeti{
+
+    color: transparent;
+    background: linear-gradient(45deg, rgb(4, 174, 180), rgba(0, 17, 253, 0.726));
+    background-clip: text;
+
+    &:hover{
+        background: linear-gradient(95deg, rgba(0, 17, 253, 0.726), rgb(4, 174, 180) );
+        background-clip: text;
+        font-size: 60px;
+        transition: 1s;
+    }
+}
+
+.parrafo_girasol{
+
+    color: transparent;
+    background: linear-gradient(45deg, rgb(211, 235, 3), rgba(221, 240, 48, 0.726));
+    background-clip: text;
+    transition: 1s;
+
+    &:hover{
+        background: linear-gradient(95deg, rgba(221, 240, 48, 0.726), rgb(211, 235, 3) );
+        background-clip: text;
+        font-size: 52px;
     }
 }
 
@@ -95,6 +151,32 @@ main{
     object-fit: cover;
     height: 100px;
     width: 100px;
+}
+
+.cabeza_del_yeti{
+
+    animation-name: cabeza_del_yeti_animacion;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-out;
+    animation-duration: 8s;
+    object-fit: cover;
+    height: 100px;
+    width: 100px;
+    position: relative;
+    top: 160px;
+}
+
+.cabeza_del_girasol{
+
+    animation-name: cabeza_del_girasol_animacion;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-out;
+    animation-duration: 8s;
+    object-fit: cover;
+    height: 100px;
+    width: 100px;
+    position: relative;
+    top: 320px;
 }
 
 @keyframes cabeza_del_tronco_animacion{
@@ -130,12 +212,100 @@ main{
     }
 }
 
-.footer_roble{
+@keyframes cabeza_del_yeti_animacion{
+
+    0% {
+            
+        transform: translate(0px, 0px);
+      
+    }
+
+    25% {
+            
+        transform: translate(300px, 0px);
+      
+    }
+
+    50% {
+            
+        transform: translate(0px, 0px);
+      
+    }
+
+    75% {
+            
+        transform: translate(300px, 0px);
+      
+    }
+
+    100% {
+            
+        transform: translate(0px, 0px);
+      
+    }
+}
+
+@keyframes cabeza_del_girasol_animacion{
+
+    0% {
+            
+        transform: translate(0px, 0px);
+      
+    }
+
+    25% {
+            
+        transform: translate(300px, 0px);
+      
+    }
+
+    50% {
+            
+        transform: translate(0px, 0px);
+      
+    }
+
+    75% {
+            
+        transform: translate(300px, 0px);
+      
+    }
+
+    100% {
+            
+        transform: translate(0px, 0px);
+      
+    }
+}
+
+.footer_index_2{
     background: radial-gradient(circle, rgb(9, 160, 9), rgb(19, 168, 131));
     width: 100%;
-    height: 80px;
-    text-align: center;
-    @include flex(center, center, none, none)
+    height: 180px;
+    display: flex;
+    @include flex(none, center, none, none)
+}
+
+.texto_footer_index_2{
+    @include flex(end, end, none, none);
+    color: transparent;
+    background: linear-gradient(45deg, rgb(28, 187, 7), rgb(106, 231, 4));
+    background-clip: text;
+    padding: 20px;
+    position: relative;
+    top: 50px;
+    
+    
+}
+
+.redes_index_2{
+    display: flex;
+    @include flex(flex-end, flex-end, row, none);
+    position: relative;
+    left: 1550px;
+    top: 50px;
+    gap: 30px
+
 }
 
 @media (max-width: 500px){
@@ -204,7 +374,7 @@ main{
     background: linear-gradient(45deg, rgb(211, 158, 13), rgb(214, 37, 10));
     background-clip: text;
     transition: 2s;
-    font-size: 45px;
+    font-size: 30px;
 
 }
 
@@ -213,8 +383,34 @@ main{
     @include flex(center, center, column, none);
 }
 
+.zombis_fuertes{
+
+    @include flex(center, center, column, none);
+    position: relative;
+    top: 155px;
+}
+
+.super_girasol{
+
+    @include flex(center, center, column, none);
+    position: relative;
+    top: 310px;
+}
+
 .el_roble{
 
+    border-radius: 35px;
+    height: 400px;
+    width: 400px;
+}
+
+.el_yeti{
+    border-radius: 35px;
+    height: 400px;
+    width: 400px;
+}
+
+.el_girasol{
     border-radius: 35px;
     height: 400px;
     width: 400px;
@@ -231,7 +427,37 @@ main{
     &:hover{
         background: linear-gradient(95deg, rgba(121, 83, 12, 0.726), rgb(194, 64, 12) );
         background-clip: text;
- 
+        font-size: 35px; 
+    }
+}
+
+.parrafo_yeti{
+
+    color: transparent;
+    background: linear-gradient(45deg, rgb(4, 174, 180), rgba(0, 17, 253, 0.726));
+    background-clip: text;
+    width: 60%;
+    font-size: 35px;
+
+    &:hover{
+        background: linear-gradient(95deg, rgba(0, 17, 253, 0.726), rgb(4, 174, 180) );
+        background-clip: text;
+        font-size: 35px;
+    }
+}
+
+.parrafo_girasol{
+
+    color: transparent;
+    background: linear-gradient(45deg, rgb(211, 235, 3), rgba(221, 240, 48, 0.726));
+    background-clip: text;
+    width: 60%;
+    font-size: 35px;
+
+    &:hover{
+        background: linear-gradient(95deg, rgba(221, 240, 48, 0.726), rgb(211, 235, 3) );
+        background-clip: text;
+        font-size: 35px;
     }
 }
 
@@ -242,7 +468,6 @@ main{
     animation-timing-function: ease-out;
     animation-duration: 8s;
     object-fit: cover;
-    height: 20%;
     width: 20%;
 }
 
@@ -256,7 +481,7 @@ main{
 
     25% {
             
-        transform: translate(325px, 0px) scale(0.6);
+        transform: translate(300px, 0px) scale(0.6);
       
     }
 
@@ -268,7 +493,7 @@ main{
 
     75% {
             
-        transform: translate(325px, 0px) scale(0.6);
+        transform: translate(300px, 0px) scale(0.6);
       
     }
 
@@ -279,8 +504,84 @@ main{
     }
 }
 
+@keyframes cabeza_del_yeti_animacion{
+
+    0% {
+            
+        transform: translate(0px, 0px) scale(0.6);
+        
+    }
+
+    25% {
+            
+        transform: translate(300px, 0px) scale(0.6);
+      
+    }
+
+    50% {
+            
+        transform: translate(0px, 0px) scale(0.6);
+        
+    }
+
+    75% {
+            
+        transform: translate(300px, 0px) scale(0.6);
+      
+    }
+
+    100% {
+            
+        transform: translate(0px, 0px) scale(0.6);
+      
+    }
+}
+
+@keyframes cabeza_del_girasol_animacion{
+
+    0% {
+            
+        transform: translate(0px, 0px) scale(0.6);
+        
+    }
+
+    25% {
+            
+        transform: translate(300px, 0px) scale(0.6);
+      
+    }
+
+    50% {
+            
+        transform: translate(0px, 0px) scale(0.6);
+        
+    }
+
+    75% {
+            
+        transform: translate(300px, 0px) scale(0.6);
+      
+    }
+
+    100% {
+            
+        transform: translate(0px, 0px) scale(0.6);
+      
+    }
+}
+
+.redes_index_2{
+    display: flex;
+    @include flex(flex-end, flex-end, row, none);
+    position: relative;
+    left: 200px;
+    top: 50px;
+    gap: 20px
+
+}
+
 .menu_roble{
-    height: 1100px;
+    height: 3130px;
 }
 
 
