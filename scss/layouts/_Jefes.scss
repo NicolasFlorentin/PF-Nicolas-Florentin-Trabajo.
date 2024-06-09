@@ -10,48 +10,48 @@ $fondo: gris;
     }
 }
 
-.nav_super{
+// .nav_super{
 
-    align-items: center;
+//     align-items: center;
 
-    display: flex;
+//     display: flex;
 
-    justify-content: space-between;
+//     justify-content: space-between;
 
-    background-color: rgb(73, 69, 87);
+//     background-color: rgb(73, 69, 87);
 
-    width: 1890px;
+//     width: 1890px;
 
-    border-radius: 25px;
+//     border-radius: 25px;
 
-}
+// }
 
-.nav-list{
+// .nav-list{
 
-    align-self: flex-start;
+//     align-self: flex-start;
 
-    list-style: none;
+//     list-style: none;
 
-    display: flex;
+//     display: flex;
 
-    justify-content: center;
+//     justify-content: center;
 
-    width: 100%;
-}
+//     width: 100%;
+// }
 
-.nav-link{
+// .nav-link{
 
-    text-decoration: none;
+//     text-decoration: none;
 
-    color: #000;
+//     color: #000;
 
-    font-size: 24px;
+//     font-size: 24px;
 
-    padding: 15px;
+//     padding: 15px;
 
-    font-weight: bold;
+//     font-weight: bold;
 
-}
+// }
 
 .random_bosses{
     @include flex(center, center, none, none);
@@ -164,46 +164,46 @@ $fondo: gris;
     }
 }
 
-.nav_super{
+// .nav_super{
 
-    align-items: center;
+//     align-items: center;
 
-    display: flex;
+//     display: flex;
 
-    justify-content: space-between;
+//     justify-content: space-between;
 
-    background-color: rgb(73, 69, 87);
+//     background-color: rgb(73, 69, 87);
 
-    width: 473px;
+//     width: 473px;
 
-}
+// }
 
-.nav-list{
+// .nav-list{
 
-    align-self: flex-start;
+//     align-self: flex-start;
 
-    list-style: none;
+//     list-style: none;
 
-    display: flex;
+//     display: flex;
 
-    justify-content: center;
+//     justify-content: center;
 
-    width: 100%;
-}
+//     width: 100%;
+// }
 
-.nav-link{
+// .nav-link{
 
-    text-decoration: none;
+//     text-decoration: none;
 
-    color: #000;
+//     color: #000;
 
-    font-size: 24px;
+//     font-size: 24px;
 
-    padding: 15px;
+//     padding: 15px;
 
-    font-weight: bold;
+//     font-weight: bold;
 
-}
+// }
 
 .random_bosses{
     @include flex(center, center, none, none);
@@ -244,8 +244,8 @@ $fondo: gris;
     color: transparent;
     background: linear-gradient(45deg, rgb(9, 250, 1), rgba(2, 255, 255, 0.726));
     background-clip: text;
-    width: 40%;
-    height: 400px;
+    width: 50%;
+    height: 555px;
     font-size: 30px;
     text-align: center;
 }
@@ -267,7 +267,7 @@ $fondo: gris;
     background: linear-gradient(45deg, rgb(250, 1, 1), rgba(236, 114, 14, 0.726));
     background-clip: text;
     width: 40%;
-    height: 400px;
+    height: 545px;
     font-size: 30px;
     text-align: center;
 }

@@ -8,48 +8,48 @@ $fondo: azul;
     }
 }
 
-.nav_final{
+// .nav_final{
 
-    align-items: center;
+//     align-items: center;
 
-    display: flex;
+//     display: flex;
 
-    justify-content: space-between;
+//     justify-content: space-between;
 
-    background-color: rgb(192, 210, 30);
+//     background-color: rgb(192, 210, 30);
 
-    width: 1890px;
+//     width: 1890px;
 
-    border-radius: 15px;
+//     border-radius: 15px;
 
-}
+// }
 
-.nav-list_final{
+// .nav-list_final{
 
-    align-self: flex-start;
+//     align-self: flex-start;
 
-    list-style: none;
+//     list-style: none;
 
-    display: flex;
+//     display: flex;
 
-    justify-content: center;
+//     justify-content: center;
 
-    width: 100%;
-}
+//     width: 100%;
+// }
 
-.nav-link{
+// .nav-link{
 
-    text-decoration: none;
+//     text-decoration: none;
 
-    color: #000;
+//     color: #000;
 
-    font-size: 24px;
+//     font-size: 24px;
 
-    padding: 15px;
+//     padding: 15px;
 
-    font-weight: bold;
+//     font-weight: bold;
 
-}
+// }
 
 .menu_peluches{
 
@@ -207,54 +207,55 @@ $fondo: azul;
 }
 
 @media (max-width: 500px){
-    .nav_final{
+    
+    // .nav_final{
 
-        align-items: center;
+    //     align-items: center;
     
-        display: flex;
+    //     display: flex;
     
-        justify-content: center;
+    //     justify-content: center;
     
-        background-color: rgb(192, 210, 30);
+    //     background-color: rgb(192, 210, 30);
     
-        width: 100%;
+    //     width: 100%;
     
-        border-radius: 15px;
+    //     border-radius: 15px;
     
-    }
+    // }
     
-    .nav-list_final{
+    // .nav-list_final{
     
-        align-self: center;
+    //     align-self: center;
     
-        list-style: none;
+    //     list-style: none;
     
-        display: flex;
+    //     display: flex;
     
-        justify-content: center;
+    //     justify-content: center;
     
-        width: 100%;
-    }
+    //     width: 100%;
+    // }
     
-    .nav-link{
+    // .nav-link{
     
-        text-decoration: none;
+    //     text-decoration: none;
     
-        color: #000;
+    //     color: #000;
     
-        font-size: 24px;
+    //     font-size: 24px;
     
-        padding: 15px;
+    //     padding: 15px;
     
-        font-weight: bold;
+    //     font-weight: bold;
     
-    }
+    // }
     
     .menu_peluches{
     
         @include flex(center, center, column, none);
     
-        height: 3000px
+        height: 3500px;
     }
     
     .titulo_peluches{
@@ -313,7 +314,7 @@ $fondo: azul;
 
         width: 335px;
 
-        height: 200px;
+        height: 225px;
     
         &:hover{
             background: linear-gradient(95deg, rgba(230, 255, 1, 0.726), rgb(30, 255, 1) );
@@ -403,7 +404,7 @@ $fondo: azul;
     
         position: relative;
     
-        left: 80px;
+        left: 55px;
     
         top: 25px;
     

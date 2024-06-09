@@ -14,46 +14,46 @@ main{
     height: 2700px;
 }
 
-.nav_boss{
+// .nav_boss{
 
-    align-items: center;
+//     align-items: center;
 
-    display: flex;
+//     display: flex;
 
-    justify-content: space-between;
+//     justify-content: space-between;
 
-    background-color: rgb(192, 210, 30);
+//     background-color: rgb(192, 210, 30);
 
-    width: 100%;
+//     width: 100%;
 
-}
+// }
 
-.nav-list{
+// .nav-list{
 
-    align-self: flex-start;
+//     align-self: flex-start;
 
-    list-style: none;
+//     list-style: none;
 
-    display: flex;
+//     display: flex;
 
-    justify-content: center;
+//     justify-content: center;
 
-    width: 100%;
-}
+//     width: 100%;
+// }
 
-.nav-link{
+// .nav-link{
 
-    text-decoration: none;
+//     text-decoration: none;
 
-    color: #000;
+//     color: #000;
 
-    font-size: 24px;
+//     font-size: 24px;
 
-    padding: 15px;
+//     padding: 15px;
 
-    font-weight: bold;
+//     font-weight: bold;
 
-}
+// }
 
 .titulo_de_los_jefes{
     @include flex(center, center, none, none);
@@ -204,48 +204,48 @@ main{
 }
 
 
-.nav_boss{
+// .nav_boss{
 
-    align-items: center;
+//     align-items: center;
 
-    display: flex;
+//     display: flex;
 
-    justify-content: center;
+//     justify-content: center;
 
-    background-color: rgb(192, 210, 30);
+//     background-color: rgb(192, 210, 30);
 
-    width: 100%;
+//     width: 100%;
 
-}
+// }
 
-.nav-list{
+// .nav-list{
 
-    align-self: center;
+//     align-self: center;
 
-    list-style: none;
+//     list-style: none;
 
-    display: flex;
+//     display: flex;
 
-    justify-content: center;
+//     justify-content: center;
 
-    width: 100%;
-}
+//     width: 100%;
+// }
 
-.nav-link{
+// .nav-link{
 
-    text-decoration: none;
+//     text-decoration: none;
 
-    color: #000;
+//     color: #000;
 
-    font-size: 24px;
+//     font-size: 24px;
 
-    padding: 15px;
+//     padding: 15px;
 
-    font-weight: bold;
+//     font-weight: bold;
 
-    text-align: center
+//     text-align: center
 
-}
+// }
 
 .titulo_de_los_jefes{
     @include flex(center, center, none, none);

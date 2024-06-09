@@ -9,48 +9,48 @@ $fondo: azul;
     }
 }
 
-.nav-index_1{
+// .nav-index_1{
 
-    align-items: center;
+//     align-items: center;
 
-    display: flex;
+//     display: flex;
 
-    justify-content: center;
+//     justify-content: center;
 
-    background-color: chocolate;
+//     background-color: chocolate;
 
-    width: 100%;
+//     width: 100%;
 
-}
+// }
 
-.nav-list-index_1{
+// .nav-list-index_1{
 
-    align-self: flex-start;
+//     align-self: flex-start;
 
-    list-style: none;
+//     list-style: none;
 
-    display: flex;
+//     display: flex;
 
-    justify-content: center;
+//     justify-content: center;
 
-    width: 100%;
-}
+//     width: 100%;
+// }
 
-.nav-link-index_1{
+// .nav-link-index_1{
 
-    text-decoration: none;
+//     text-decoration: none;
 
-    color: #000;
+//     color: #000;
 
-    font-size: 24px;
+//     font-size: 24px;
 
-    padding: 15px;
+//     padding: 15px;
 
-    font-weight: bold;
+//     font-weight: bold;
 
-    text-align: center
+//     text-align: center
 
-}
+// }
 
 .container{
     min-height: 100vh;
@@ -87,7 +87,7 @@ h1{
     
 a{
     text-decoration: none;
-    font-size: 1.7rem;
+    font-size: 1.6rem;
  }
 
 .zombi_pequeño_izquierda{
@@ -314,7 +314,7 @@ a{
     
             0% {
             
-                    transform: rotate(720deg) ;
+                    transform: rotate(720deg);
                   
             }
     
@@ -378,103 +378,161 @@ a{
             height: 100px;
         }
 
-        .nav-index_1{
+        // .nav-index_1{
 
-            align-items: center;
+        //     align-items: center;
         
-            display: flex;
+        //     display: flex;
         
-            justify-content: center;
+        //     justify-content: center;
         
-            background-color: chocolate;
+        //     background-color: chocolate;
         
-            width: 474px;
+        //     width: 474px;
         
-        }
+        // }
 
-        .nav-list-index_1{
+        // .nav-list-index_1{
 
-            align-self: flex-start;
+        //     align-self: flex-start;
         
-            list-style: none;
+        //     list-style: none;
         
-            display: flex;
+        //     display: flex;
         
-            justify-content: center;
+        //     justify-content: center;
         
-            width: 100%;
-        }
+        //     width: 100%;
+        // }
         
-        .nav-link-index_1{
+        // .nav-link-index_1{
         
-            text-decoration: none;
+        //     text-decoration: none;
         
-            color: #000;
+        //     color: #000;
         
-            font-size: 24px;
+        //     font-size: 24px;
         
-            padding: 15px;
+        //     padding: 15px;
         
-            font-weight: bold;
+        //     font-weight: bold;
         
-            text-align: center
+        //     text-align: center
         
-        }
+        // }
 
 
         @keyframes cabeza_animacion {
 
             0% {
             
-                    transform: rotate(720deg) scale(0.8);
+                    transform: rotate(720deg) scale(0.6);
                   
             }
     
             12% {
                 
-                    transform: translate(100px, 0px) scale(0.8);
+                    transform: translate(100px, 0px) scale(0.6);
                   
             }
     
             25% {
                 
-                transform: rotate(720deg) scale(0.8);
+                transform: rotate(720deg) scale(0.6);
               
         }
     
             37% {
                 
-                transform: translate(0px, 0px) scale(0.8);
+                transform: translate(0px, 0px) scale(0.6);
               
             }
     
             49% {
                 
-                transform: rotate(720deg) scale(0.8);
+                transform: rotate(720deg) scale(0.6);
               
             }
             
             61% {
                 
-                transform: translate(-100px, 0px) scale(0.8);
+                transform: translate(-100px, 0px) scale(0.6);
               
             } 
     
             73% {
                 
-                transform: rotate(720deg) scale(0.8);
+                transform: rotate(720deg) scale(0.6);
               
             }
     
             83% {
                 
-                transform: translate(0px, 0px) scale(0.8);
+                transform: translate(0px, 0px) scale(0.6);
               
             }
     
             100% {
                 
-                transform: rotate(720deg) scale(0.8);
+                transform: rotate(720deg) scale(0.6);
+              
+            }
+            
+        }
+
+        @keyframes cabeza_animacion_planta {
+    
+            0% {
+            
+                    transform: rotate(720deg) scale(0.7);
+                  
+            }
+    
+            12% {
+                
+                    transform: translate(-100px, 0px) scale(0.7);
+                  
+            }
+    
+            25% {
+                
+                transform: rotate(720deg) scale(0.7);
+              
+        }
+    
+            37% {
+                
+                transform: translate(0px, 0px) scale(0.7);
+              
+            }
+    
+            49% {
+                
+                transform: rotate(720deg) scale(0.7);
+              
+            }
+            
+            61% {
+                
+                transform: translate(100px, 0px) scale(0.7);
+              
+            } 
+    
+            73% {
+                
+                transform: rotate(720deg) scale(0.7);
+              
+            }
+    
+            83% {
+                
+                transform: translate(0px, 0px) scale(0.7);
+              
+            }
+    
+            100% {
+                
+                transform: rotate(720deg) scale(0.7);
               
             }
             
@@ -514,7 +572,7 @@ a{
             display: flex;
             @include flex(flex-end, flex-end, row, none);
             position: relative;
-            left: 200px;
+            left: 180px;
             top: 50px;
             gap: 20px
     
